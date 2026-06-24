@@ -1,0 +1,41 @@
+{
+    "sniper": {
+        "name": "Sniper",
+        "faction": "Imperial",
+        "cost": 9,
+
+        "health": 10,
+        "defense": 16,
+        "movement": 5,
+        "detection_range": 12,
+
+        "attacks": [
+            "sniper_rifle"
+        ],
+
+        "abilities": [
+            "steady_shot"
+        ],
+
+        "rarity": 1
+    },
+
+    "trooper": {
+        "name": "Trooper",
+        "faction": "Imperial",
+        "cost": 5,
+
+        "health": 10,
+        "defense": 18,
+        "movement": 6,
+        "detection_range": 12,
+
+        "attacks": [
+            "blaster"
+        ],
+
+        "abilities": [],
+
+        "rarity": 1
+    }
+}

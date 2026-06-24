@@ -1,0 +1,69 @@
+{
+    "base" : {"width": 22, "height": 16},
+    "features": {
+
+        "walls" : {
+            "vertical": [
+                {
+                    "length":3,
+                    "position":null
+                },
+                {
+                    "length":2,
+                    "position":null
+                }
+            ],
+            "horizontal": [
+                {
+                    "length":4,
+                    "position":null
+                },
+                {
+                    "length":4,
+                    "position":null
+                }
+            ],
+            "diag_down": [
+                {
+                    "length":1,
+                    "position":null
+                }
+            ],
+            "diag_up": [
+                {
+                    "length":2,
+                    "position":null
+                }
+            ]
+        },
+
+        "obstacles" :{
+            "shallow_pit": [
+                {
+                    "length": 2,
+                    "width": 1, 
+                    "position": null
+                }
+            ],
+            "dense_cover": [
+                {
+                    "length": 3,
+                    "width": 3,
+                    "position": null
+                },
+                {
+                    "length": 1,
+                    "width": 2,
+                    "position": null
+                }
+            ],
+            "light_cover": [
+                {
+                    "length": 4,
+                    "width": 2,
+                    "position": null
+                }
+            ]
+        }
+    }
+}
