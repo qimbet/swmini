@@ -7,25 +7,54 @@ class Tile:
     def add(self, feature):
         self.features.append(feature)
 
+    def symbol(self):
+        if not self.features:
+            return "."
+        return self.features[-1].symbol()
+
 class TileFeature:
+    def symbol(self):
+        return "c"
+
     def blocks_movement(self): return False
     def movement_cost(self): return 1
     def cover_value(self): return 0
     def height(self): return 0
 
+class SolidObstacle(TileFeature):
+    tags = {"solid", "opaque", "impassable"}
+    def symbol(self):
+        return "#"
+    def blocks_movement(self):
+
+        return True
+
+    def movement_cost(self):
+        return float("inf")
+
+    def blocks_vision(self):
+        return True
+
 
 class LightCover(TileFeature):
     tags = {"cover"}
+    def symbol(self):
+        return "~"
+
     def cover_value(self):
         return 1
 
 class DenseCover(TileFeature):
     tags = {"cover", "obstruction"}
+    def symbol(self):
+        return "="
     def cover_value(self):
         return 2
 
 class ShallowPit(TileFeature):
     tags = {"obstruction"}
+    def symbol(self):
+        return "0"
     def blocks_movement(self): 
         return False
 

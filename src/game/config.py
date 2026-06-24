@@ -6,6 +6,8 @@ PROJECT_ROOT = SRC_ROOT.parent
 
 ASSETS = PROJECT_ROOT / "assets"
 
+MAPS_DIR = ASSETS / "maps" 
+
 ABILITIES    = SRC_ROOT / "abilities"
 CLASSES    = SRC_ROOT / "classes"
 DATA   = SRC_ROOT / "data"
