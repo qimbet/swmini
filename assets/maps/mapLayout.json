@@ -21,6 +21,10 @@
                 {
                     "length":4,
                     "position":null
+                },
+                {
+                    "length":7,
+                    "position":null
                 }
             ],
             "diag_down": [
@@ -38,21 +42,33 @@
         },
 
         "obstacles" :{
+            "pit": [
+                {
+                    "length": 4,
+                    "width": 2,
+                    "position": null
+                },
+                {
+                    "length": 3,
+                    "width": 3,
+                    "position": null
+                }
+            ],
             "shallow_pit": [
                 {
                     "length": 2,
-                    "width": 1, 
+                    "width": 3, 
                     "position": null
                 }
             ],
             "dense_cover": [
                 {
-                    "length": 3,
+                    "length": 1,
                     "width": 3,
                     "position": null
                 },
                 {
-                    "length": 1,
+                    "length": 5,
                     "width": 2,
                     "position": null
                 }
@@ -63,7 +79,14 @@
                     "width": 2,
                     "position": null
                 }
-            ]
+            ],
+           "solid_obstacle": [
+                {
+                    "length": 2,
+                    "width": 2,
+                    "position": null
+                }
+           ]
         }
     }
 }

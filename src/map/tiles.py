@@ -52,7 +52,7 @@ class DenseCover(TileFeature):
         return 2
 
 class ShallowPit(TileFeature):
-    tags = {"obstruction"}
+    tags = {}
     def symbol(self):
         return "0"
     def blocks_movement(self): 
@@ -61,4 +61,11 @@ class ShallowPit(TileFeature):
     def movement_cost(self):
         return 1.5
 
+
+class Pit(TileFeature):
+    tags = {}
+    def symbol(self):
+        return "0"
+    def blocks_movement(self): 
+        return True
 

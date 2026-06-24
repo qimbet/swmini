@@ -21,9 +21,11 @@ def main(seed=None):
     game_map.display()
 
 FEATURE_REGISTRY = {
+    "solid_obstacle": SolidObstacle,
     "light_cover": LightCover,
     "dense_cover": DenseCover,
     "shallow_pit": ShallowPit,
+    "pit": Pit,
 }
 
 WALL_EDGE_TYPE = {
