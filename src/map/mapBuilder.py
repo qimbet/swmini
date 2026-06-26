@@ -64,6 +64,17 @@ class GameMap:
     def _is_solid(self, x, y):
         return any("solid" in f.tags for f in self.tiles[y][x].features)
 
+    def _wall_fits(self, x0, y0, length, step_x, step_y):
+        x1 = x0 + step_x * (length - 1)
+        y1 = y0 + step_y * (length - 1)
+
+        return (
+            0 <= x0 < self.width and
+            0 <= y0 < self.height and
+            0 <= x1 < self.width and
+            0 <= y1 < self.height
+        )
+
     def _place_area(self, feature_cls, x0, y0, w, h):
         for y in range(y0, y0 + h):
             for x in range(x0, x0 + w):
@@ -126,32 +137,28 @@ class GameMap:
                 pos = wall["position"]
 
                 if pos is None:
-                    x0 = self.rng.randint(0, self.width - 1)
-                    y0 = self.rng.randint(0, self.height - 1)
+                    while True:
+                        x0 = self.rng.randint(0, self.width - 1)
+                        y0 = self.rng.randint(0, self.height - 1)
+                        if self._wall_fits(x0, y0, length, step_x, step_y):
+                            break
                 else:
                     x0, y0 = pos
-
-                x1 = x0 + step_x * (length - 1) #compute endpoints (optional)
-                y1 = y0 + step_y * (length - 1)
+                    if not self._wall_fits(x0, y0, length, step_x, step_y):
+                        raise ValueError(
+                            f"Wall at {(x0, y0)} length={length} "
+                            f"orientation='{orientation}' extends outside map"
+                        )
 
                 for i in range(length):
                     x = x0 + i * step_x
                     y = y0 + i * step_y
-
-                    if not (0 <= x < self.width and 0 <= y < self.height):
-                        continue  # or break / raise depending on strictness
 
                     self.add_wall(
                         (x, y),
                         (x + edge_x, y + edge_y),
                         edge_type
                     )
-
-    def _can_place(self, x0, y0, w, h):
-        return (
-            self._area_is_empty(x0, y0, w, h)
-            and self._area_has_no_walls(x0, y0, w, h)
-        )
 
     def _obstacle_can_fit(self, x0, y0, w, h):
         if x0 < 0 or y0 < 0:
