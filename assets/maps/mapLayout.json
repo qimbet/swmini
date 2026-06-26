@@ -85,6 +85,26 @@
                     "length": 2,
                     "width": 2,
                     "position": null
+                }, 
+                {
+                    "length": 1,
+                    "width": 1,
+                    "position": null
+                }, 
+                {
+                    "length": 1,
+                    "width": 1,
+                    "position": null
+                }, 
+                {
+                    "length": 1,
+                    "width": 1,
+                    "position": null
+                }, 
+                {
+                    "length": 3,
+                    "width": 2,
+                    "position": null
                 }
            ]
         }

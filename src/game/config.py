@@ -7,6 +7,8 @@ PROJECT_ROOT = SRC_ROOT.parent
 ASSETS = PROJECT_ROOT / "assets"
 
 MAPS_DIR = ASSETS / "maps" 
+MAP_OBJECTS = ASSETS / "map_assets" / "objects"
+MAP_BACKGROUNDS = ASSETS / "map_assets" / "backgrounds"
 
 ABILITIES    = SRC_ROOT / "abilities"
 CLASSES    = SRC_ROOT / "classes"

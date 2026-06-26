@@ -244,6 +244,25 @@ class GameMap:
 
             print(border)
 
+    def export(self, path):
+        data = {
+            "width": self.width,
+            "height": self.height,
+            "tiles": [
+                [tile.type for tile in row]
+                for row in self.tiles
+            ],
+            "edges": [
+                {
+                    "a": list(a),
+                    "b": list(b)
+                }
+                for (a, b) in self.edges
+            ]
+        }
+
+        with open(path, "w") as f:
+            json.dump(data, f, indent=2)
 
 
 
