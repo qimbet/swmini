@@ -1,38 +1,7 @@
 from src.game.config import ASSETS, MAPS_DIR
-from tkinter import Tk, Canvas
-from PIL import Image, ImageTk
 
 
 class GamePopup:
-    def __init__(self, map_obj, background_path, tile_size=48):
-        self.map = map_obj
-        self.tile_size = tile_size
-
-        self.root = Tk()
-        self.root.title("Map Viewer")
-
-        width = map_obj.width * tile_size
-        height = map_obj.height * tile_size
-
-        self.canvas = Canvas(
-            self.root,
-            width=width,
-            height=height
-        )
-        self.canvas.pack()
-
-        img = Image.open(background_path)
-        img = img.resize((width, height))
-        self.bg = ImageTk.PhotoImage(img)
-
-        self.canvas.create_image(
-            0, 0,
-            image=self.bg,
-            anchor="nw"
-        )
-
-        self.draw_map()
-
     def draw_map(self):
         ts = self.tile_size
 

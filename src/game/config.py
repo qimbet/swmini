@@ -1,19 +1,35 @@
 # src/game/config.py
+import os
 from pathlib import Path
 
-SRC_ROOT = Path(__file__).resolve().parents[1]
+ROOT_MARKER = ".gameroot"
+def find_site_root(start: Path, rootMarker=".gameroot") -> Path:
+    current = start.resolve()
+
+    if current.is_file():
+        current = current.parent
+
+    while True:
+        if (current / rootMarker).exists():
+            return current
+        if current.parent == current:
+            raise FileNotFoundError(f"Could not locate '{rootMarker}'.")
+        current = current.parent
+
+
+SRC_ROOT =  find_site_root(rootMarker=".gameroot")
 PROJECT_ROOT = SRC_ROOT.parent
 
-ASSETS = PROJECT_ROOT / "assets"
+ASSETS = os.path.join(PROJECT_ROOT, "assets")
+MAPS_DIR = os.path.join(ASSETS, "maps")
+MAP_OBJECTS = os.path.join(ASSETS, "map_assets", "objects")
+MAP_BACKGROUNDS = os.path.join(ASSETS, "map_assets", "backgrounds")
 
-MAPS_DIR = ASSETS / "maps" 
-MAP_OBJECTS = ASSETS / "map_assets" / "objects"
-MAP_BACKGROUNDS = ASSETS / "map_assets" / "backgrounds"
+ABILITIES    = os.path.join(SRC_ROOT, "abilities")
+CLASSES    = os.path.join(SRC_ROOT, "classes")
+DATA   = os.path.join(SRC_ROOT, "data")
+ENGINE    = os.path.join(SRC_ROOT, "engine")
+GAME    = os.path.join(SRC_ROOT, "game")
+MAP    = os.path.join(SRC_ROOT, "map")
+UNITS    = os.path.join(SRC_ROOT, "units")
 
-ABILITIES    = SRC_ROOT / "abilities"
-CLASSES    = SRC_ROOT / "classes"
-DATA   = SRC_ROOT / "data"
-ENGINE    = SRC_ROOT / "engine"
-GAME    = SRC_ROOT / "game"
-MAP    = SRC_ROOT / "map"
-UNITS    = SRC_ROOT / "units"
