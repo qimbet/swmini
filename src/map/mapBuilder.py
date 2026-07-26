@@ -1,18 +1,17 @@
 
-import random, json
+import random, json, os
 from src.game.config import ASSETS, MAPS_DIR
 from src.map.edges import *
 from src.map.tiles import *
 
 
 def load_layout():
-    path = MAPS_DIR / "mapLayout.json"
+    path = os.path.join(MAPS_DIR, "mapLayout.json")
     with open(path, "r") as f:
         return json.load(f)
     
 def main(seed=None):
     layout = load_layout()
-
     game_map = GameMap(layout)
 
     if seed is not None:

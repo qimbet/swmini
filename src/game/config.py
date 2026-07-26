@@ -17,8 +17,11 @@ def find_site_root(start: Path, rootMarker=".gameroot") -> Path:
         current = current.parent
 
 
-SRC_ROOT =  find_site_root(rootMarker=".gameroot")
-PROJECT_ROOT = SRC_ROOT.parent
+PROJECT_ROOT =  find_site_root(Path(os.getcwd()), rootMarker=".gameroot")
+#PROJECT_ROOT = SRC_ROOT.parent
+SRC_ROOT = os.path.join(PROJECT_ROOT, "src")
+
+print(f"project root: {PROJECT_ROOT}")
 
 ASSETS = os.path.join(PROJECT_ROOT, "assets")
 MAPS_DIR = os.path.join(ASSETS, "maps")

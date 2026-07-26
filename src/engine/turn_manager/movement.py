@@ -22,14 +22,14 @@ def can_move(self, start, end):
 
     return True
 
-def can_end_turn(self, tile):
-    if tile.has_diagonal_wall:
-        return False
-
-    if tile.type == "P":
-        return False
-
-    return True
+#def can_end_turn(self, tile):
+#    if tile.has_diagonal_wall:
+#        return False
+#
+#    if tile.type == "P":
+#        return False
+#
+#    return True
 
 
 def blocks_los(ray, diagonal):
@@ -37,8 +37,9 @@ def blocks_los(ray, diagonal):
 
     if not crossing:
         return False
+    else: 
+        return True
 
-    if ray.parallel_to(diagonal):
-        return False
-
-    return True
+#    if ray.parallel_to(diagonal):
+#        return False
+#    return True
