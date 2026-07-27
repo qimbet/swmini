@@ -18,13 +18,13 @@ class MapManager:
     """
 
 
-    def __init__(self, seed=None):
-        self.seed = seed
-        self.rng = random.Random(seed)
-
+    def __init__(self, rng, unit_instantiator):
+        self.rng = rng
         self.map = None
         self.units = []
         self.players = []
+
+        self.factory = unit_instantiator
 
         self.turn_number = 0
         self.active_player = None
@@ -39,11 +39,10 @@ class MapManager:
         self.map = GameMap(map_context, seed=self.seed)
 
 
-    def load_army(self, army_file, character_file):
-        factory = UnitInstantiator(character_file)
+    def load_army(self, army_file):
         deployment = DeploymentManager(
             self.map,
-            factory,
+            self.unit_instantiator,
             rng=self.rng
         )
         deployment.load_army(army_file)

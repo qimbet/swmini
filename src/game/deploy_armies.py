@@ -14,11 +14,13 @@ class DeploymentManager:
         with open(path) as f:
             army = json.load(f)
 
+        faction = army["faction"]
+
         for entry in army["units"]:
             unit_type = entry["type"]
 
             for pos in entry["position"]:
-                unit = self.factory.create(unit_type)
+                unit = self.factory.create(faction, unit_type)
                 location = (pos["x"], pos["y"])
 
                 if None in location:

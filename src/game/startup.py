@@ -1,29 +1,41 @@
-
-import os
-
-from random import Random
-from src.classes.unit_instantiator import UnitInstantiator
-from src.game.deploy_armies import DeploymentManager
-from src.map.mapBuilder import GameMap, load_layout
-from src.game.config import *
+from src.game.core import Game
+from src.classes.players import Player
 
 
-rng = Random()
-factory = UnitInstantiator("src/data/rebel/characters.json")
+def create_debug_game():
+    players = [
+        Player(
+            name="Alice",
+            faction="rebels",
+            path_to_army="assets/armies/rebel_default.json",
+            side=0
+        ),
+        Player(
+            name="Bob",
+            faction="rebels",
+            path_to_army="assets/armies/rebel_default.json",
+            side=2
+        )
+    ]
 
-mapPath = os.path.join(MAPS_DIR, "mapLayout.json")
-
-layout = load_layout(mapPath=mapPath)
-game_map = GameMap(layout)
-#game_map.display()
-
-deployment = DeploymentManager(
-    game_map,
-    factory,
-    rng=rng
-)
+    return Game(
+        seed=1234,
+        map_file="src/data/maps/mapLayout.json",
+        unit_files={
+            "rebels": "src/data/units/rebels.json",
+            "imperials": "src/data/units/imperials.json",
+        },
+        players=players
+    )
 
 
-deployment.load_army(
-    "assets/armies/rebel_default.json"
-)
+def main():
+    game = create_debug_game()
+    #game = created_matched_game()
+    game.start()
+
+
+if __name__ == "__main__":
+    main()
+
+

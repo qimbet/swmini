@@ -1,15 +1,16 @@
 import json
-from pathlib import Path
 
 from src.classes.character_scaffold import Unit
 
 
 class UnitInstantiator:
-    def __init__(self, character_file):
-        with open(character_file) as f:
-            self.database = json.load(f)
+    def __init__(self, character_files):
+        self.database = {}
 
+        for faction, path in character_files.items():
+            with open(path) as f:
+                self.database[faction] = json.load(f)
 
-    def create(self, unit_type):
-        data = self.database[unit_type]
+    def create(self, faction, unit_type):
+        data = self.database[faction][unit_type]
         return Unit(**data)
