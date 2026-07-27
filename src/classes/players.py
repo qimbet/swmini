@@ -28,9 +28,7 @@ class Player:
             "faction": self.faction,
             "path_to_army": self.path_to_army,
             "side": self.side,
-            "ranking": self.ranking,
-            "winrate_overall": self.winrate_overall,
-            "winrate_faction": self.winrate_faction
+            "units": self.units,
         }
 
 

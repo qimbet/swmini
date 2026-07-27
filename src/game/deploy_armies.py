@@ -4,14 +4,14 @@ import random
 
 class DeploymentManager:
     def __init__(self, game_map, unit_instantiator, rng=None):
+        self.rng = rng or random.Random()
+        
         self.map = game_map
         self.factory = unit_instantiator
-        self.rng = rng or random.Random()
-
         self.units = []
 
-    def load_army(self, path, side=0):
-        with open(path) as f:
+    def load_army(self, pathToArmy, side=0):
+        with open(pathToArmy) as f:
             army = json.load(f)
 
         faction = army["faction"]
@@ -44,7 +44,7 @@ class DeploymentManager:
 
 
 
-    def can_place(self, x, y): #return True if location is valid
+    def can_place(self, x, y, obstacleTypes=["solid"], phasing=False): #return True if ALL OF 'obstacleTypes' tags are present in space
         # outside map
         if not (
             0 <= x < self.map.width and
@@ -56,23 +56,24 @@ class DeploymentManager:
 
         tile = self.map.tiles[y][x]
 
-        # solid obstacle
+        # specified obstacle
         if any(
-            "solid" in feature.tags
-            for feature in tile.features
-        ):
+            any(tag in feature.tags for tag in obstacleTypes)
+            for feature in tile.features):
+
             print(f"Cannot place unit inside an obstacle!")
             return False
 
         # occupied
-        for unit in self.units:
-            if unit.position == (x,y):
-                print(f"Space already occupied!")
-                return False
+        if not phasing:
+            for unit in self.units:
+                if unit.position == (x,y):
+                    print(f"Space already occupied!")
+                    return False
 
         return True
 
-    def random_spawn(self, width=5, side=0): #0-left, 1-top, 2-right, 3-bottom
+    def random_spawn(self, width=5, side=0, clustering=0): #0-left, 1-top, 2-right, 3-bottom
         if side == 0:       # left
             x_range = (0, width - 1)
             y_range = (0, self.map.height - 1)
@@ -92,7 +93,6 @@ class DeploymentManager:
         for _ in range(150):
             x = self.rng.randint(*x_range)
             y = self.rng.randint(*y_range)
-
             if self.can_place(x, y):
                 return (x, y)
 
