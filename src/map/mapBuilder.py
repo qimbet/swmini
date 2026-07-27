@@ -5,9 +5,10 @@ from src.map.edges import *
 from src.map.tiles import *
 
 
-def load_layout():
-    path = os.path.join(MAPS_DIR, "mapLayout.json")
-    with open(path, "r") as f:
+def load_layout(mapPath=None):
+    if not mapPath:
+        mapPath = os.path.join(MAPS_DIR, "mapLayout.json")
+    with open(mapPath, "r") as f:
         return json.load(f)
     
 def main(seed=None):

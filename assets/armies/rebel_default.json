@@ -1,0 +1,20 @@
+{
+    "units":[
+        {
+            "type": "sniper",
+            "position": [
+                    {"x": null, "y": null},
+                    {"x": null, "y": null}
+                ]
+        },
+
+        {
+            "type": "trooper",
+            "position": [
+                    {"x": null, "y": null},
+                    {"x": null, "y": null},
+                    {"x": null, "y": null}
+                ]
+        }
+    ]
+}

@@ -9,6 +9,10 @@
                     "position":null
                 },
                 {
+                    "length":7,
+                    "position":null
+                }, 
+                {
                     "length":2,
                     "position":null
                 }
@@ -77,6 +81,11 @@
                 {
                     "length": 4,
                     "width": 2,
+                    "position": null
+                }, 
+                {
+                    "length": 1,
+                    "width": 6,
                     "position": null
                 }
             ],
