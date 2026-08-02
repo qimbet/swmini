@@ -7,13 +7,13 @@ def create_debug_game():
         Player(
             name="Alice",
             faction="rebels",
-            path_to_army="assets/armies/rebel_default.json",
+            path_to_army="data/armies/rebel_default.json",
             side=0
         ),
         Player(
             name="Bob",
             faction="rebels",
-            path_to_army="assets/armies/rebel_default.json",
+            path_to_army="data/armies/rebel_default.json",
             side=2
         )
     ]

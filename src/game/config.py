@@ -22,16 +22,18 @@ SRC_ROOT = os.path.join(PROJECT_ROOT, "src")
 
 print(f"project root: {PROJECT_ROOT}")
 
-ASSETS = os.path.join(PROJECT_ROOT, "assets")
-MAPS_DIR = os.path.join(ASSETS, "maps")
-MAP_OBJECTS = os.path.join(ASSETS, "map_assets", "objects")
-MAP_BACKGROUNDS = os.path.join(ASSETS, "map_assets", "backgrounds")
+ASSETS_DIR= os.path.join(PROJECT_ROOT, "assets")
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 
-ABILITIES    = os.path.join(SRC_ROOT, "abilities")
+MAP_OBJECTS = os.path.join('assets', "map_assets", "objects")
+MAP_BACKGROUNDS = os.path.join('assets', "map_assets", "backgrounds")
+
+ABILITIES    = os.path.join(DATA_DIR, "abilities")
+ARMIES    = os.path.join(DATA_DIR, "armies")
+MAPS_DIR = os.path.join(DATA_DIR, "maps")
+UNITS    = os.path.join(DATA_DIR, "units")
+
+
 CLASSES    = os.path.join(SRC_ROOT, "classes")
-DATA   = os.path.join(SRC_ROOT, "data")
 ENGINE    = os.path.join(SRC_ROOT, "engine")
 GAME    = os.path.join(SRC_ROOT, "game")
-MAP    = os.path.join(SRC_ROOT, "map")
-UNITS    = os.path.join(SRC_ROOT, "units")
-
