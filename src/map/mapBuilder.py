@@ -1,6 +1,6 @@
 
 import random, json, os
-from src.game.config import data, MAPS_DIR
+from src.game.config import MAPS_DIR
 from src.map.edges import *
 from src.map.tiles import *
 
