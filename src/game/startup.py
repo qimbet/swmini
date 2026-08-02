@@ -31,7 +31,6 @@ def create_debug_game():
 
 def main():
     game = create_debug_game()
-    #game = created_matched_game()
     game.start()
 
 

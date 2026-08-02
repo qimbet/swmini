@@ -1,20 +1,25 @@
 import random
+from pathlib import Path
+from config import UNITS
 
 from src.classes.unit_instantiator import UnitInstantiator
 from server.GameSession.GameState.mapManager import MapManager
 
 
-allUnitFiles={
-    "rebels": "src/data/units/rebels.json",
-    "imperials": "src/data/units/imperials.json",
-},
+def get_all_units(units_directory=UNITS):
+    unit_dir = Path(units_directory)
+    return {
+        path.stem: str(path)
+        for path in unit_dir.glob("**.json")
+    }
+
 
 class Game:
     def __init__(
         self,
         seed=None,
         map_file=None,
-        unit_files=allUnitFiles,
+        unit_files=get_all_units(),
         players=None
     ):
         self.seed = seed if seed else 1234

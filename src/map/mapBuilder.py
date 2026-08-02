@@ -7,7 +7,7 @@ from src.map.tiles import *
 
 def load_layout(mapPath=None):
     if not mapPath:
-        mapPath = os.path.join(MAPS_DIR, "mapLayout.json")
+        mapPath = os.path.join(MAPS_DIR, "test_map.json")
     with open(mapPath, "r") as f:
         return json.load(f)
     

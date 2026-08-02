@@ -1,7 +1,7 @@
 {
-    "base" : {"width": 22, "height": 26},
-    "features": {
-
+    "base" : {"width": 28, "height": 20},
+    "features": { 
+        "comment": "position takes either null or [x,y]",
         "walls" : {
             "vertical": [
                 {
@@ -10,7 +10,7 @@
                 },
                 {
                     "length":12,
-                    "position":null
+                    "position":[2,2]
                 }, 
                 {
                     "length":2,
@@ -95,6 +95,16 @@
                 }
             ],
            "solid_obstacle": [
+                {
+                    "length": 2,
+                    "width": 2,
+                    "position": [5,2]
+                }, 
+                {
+                    "length": 4,
+                    "width": 2,
+                    "position": [3,2]
+                }, 
                 {
                     "length": 2,
                     "width": 2,
