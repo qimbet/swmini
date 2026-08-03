@@ -205,11 +205,12 @@ class GameMap:
         )
 
     def generate_features(self, mapContextData):
+        obstaclesData = mapContextData.get("obstacles", {})
+        self._place_obstacles(obstaclesData)
+
         wallsData = mapContextData.get("walls", {})
         self._place_walls(wallsData)
 
-        obstaclesData = mapContextData.get("obstacles", {})
-        self._place_obstacles(obstaclesData)
         self._build_obstacle_enclosures()
 
 
