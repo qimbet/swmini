@@ -20,7 +20,7 @@ class DeploymentManager:
         unit.position = position
         return True
 
-    def random_spawn(self, width=5, side=0, clustering=0): #0-left, 1-top, 2-right, 3-bottom
+    def random_spawn(self, width=4, side=0, clustering=0): #0-left, 1-top, 2-right, 3-bottom
         game_map = self.map_manager.map
         if side == 0:       # left
             x_range = (0, width - 1)

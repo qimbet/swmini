@@ -21,9 +21,9 @@
         "rarity": 1
     },
 
-    "trooper": {
-        "name": "Trooper",
-        "symbol": "IT",
+    "brawler": {
+        "name": "Brawler",
+        "symbol": "IB",
         "faction": "Imperial",
         "cost": 5,
 

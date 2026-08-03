@@ -12,8 +12,8 @@ def create_debug_game():
         ),
         Player(
             name="Bob",
-            faction="rebels",
-            path_to_army="data/armies/rebel_default.json",
+            faction="imperials",
+            path_to_army="data/armies/imperial_default.json",
             side=2
         )
     ]

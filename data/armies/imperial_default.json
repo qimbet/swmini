@@ -1,9 +1,12 @@
 {
-    "faction": "rebels",
+    "faction": "imperials",
     "units":[
         {
             "type": "sniper",
             "position": [
+                    {"x": null, "y": null},
+                    {"x": null, "y": null},
+                    {"x": null, "y": null},
                     {"x": null, "y": null},
                     {"x": null, "y": null},
                     {"x": null, "y": null}
@@ -11,9 +14,8 @@
         },
 
         {
-            "type": "trooper",
+            "type": "brawler",
             "position": [
-                    {"x": null, "y": null},
                     {"x": null, "y": null},
                     {"x": null, "y": null},
                     {"x": null, "y": null},
