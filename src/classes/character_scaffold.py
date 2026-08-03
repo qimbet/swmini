@@ -3,7 +3,7 @@ from src.classes.abilities import *
 
 
 class Unit:
-    def __init__(
+    def __init__( #better to pass these as a dict; later unpacked
             self,
             cost,
             faction,
@@ -21,6 +21,7 @@ class Unit:
             abilities=None,
             passive=None,
 
+            symbol=None,
             fullArt_path=None,
             icon_path=None,
         ):
@@ -28,8 +29,10 @@ class Unit:
         self.cost = cost
         self.faction = faction
         self.name = name
+
         self.fullArt_path = fullArt_path
         self.icon_path = icon_path
+        self.symbol = symbol
 
         self.health = health
         self.defense = defense
@@ -51,6 +54,7 @@ class Unit:
 
             "fullArt_path": self.fullArt_path,
             "icon_path": self.icon_path,
+            "symbol": self.symbol,
 
             "health": self.health,
             "defense": self.defense,
@@ -80,6 +84,7 @@ class Unit:
 
             fullArt_path=data.get("fullArt_path"),
             icon_path=data.get("icon_path"),
+            symbol=data.get("symbol"),
 
             health=data["health"],
             defense=data["defense"],

@@ -213,13 +213,19 @@ class GameMap:
         self._build_obstacle_enclosures()
 
 
-    def display(self):
+    def display(self, symbol_provider=None):
         print("+" + "---+" * self.width)
         for y in range(self.height):
             row = "|"
 
             for x in range(self.width):
-                row += f" {self.tiles[y][x].symbol()} "
+                if symbol_provider:
+                    symbol = symbol_provider(x,y)
+                else:
+                    symbol = self.tiles[y][x].symbol()
+
+                row += f" {symbol:<3} " #aw <3
+
                 if x < self.width - 1:
                     edge = self.get_edge(
                         (x, y),

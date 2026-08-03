@@ -36,12 +36,9 @@ class MapManager:
             map_context = json.load(f)
         self.map = GameMap(map_context, rng=self.rng)
 
-
-
     # ---------------------------
-    # Game state
+    # Game setup
     # ---------------------------
-
     def add_player(self, player):
         self.players.append(player)
 
@@ -55,8 +52,45 @@ class MapManager:
         )
         deployment.deploy(player.army)
 
+    # ---------------------------
+    # Game state
+    # ---------------------------
     def next_turn(self):
         self.turn_number += 1
+
+    def can_place(self, position, obstacle_types=("solid",)):
+        x, y = position
+        if not (
+            0 <= x < self.map.width and
+            0 <= y < self.map.height
+        ):
+            return False
+
+        tile = self.map.tiles[y][x]
+
+        for feature in tile.features:
+            if any(
+                tag in feature.tags
+                for tag in obstacle_types
+            ):
+                return False
+
+        if self.get_unit_at(position):
+            return False
+        return True
+
+
+    def get_symbol(self, x, y): #Renders symbol for a tile; combines terrain + units
+        tile = self.map.tiles[y][x]
+        
+        terrain = tile.symbol() #Terrain
+        unit = self.get_unit_at((x, y)) #Unit
+
+        if unit:
+            symbol = terrain + unit.symbol
+        else:
+            symbol = terrain
+        return symbol[:3]
 
     def get_unit_at(self, position):
         for unit in self.units:

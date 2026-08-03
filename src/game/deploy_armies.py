@@ -2,56 +2,24 @@ import random
 
 
 class DeploymentManager:
-    def __init__(self, game_map, rng=None):
+    def __init__(self, game_map, map_manager, rng=None):
         self.rng = rng or random.Random()
         self.map = game_map
+        self.map_manager=map_manager
 
     def deploy(self, army, positions=None):
         for unit, position in zip(army.units, positions):
             if position is None:
                 position = self.random_spawn()
-
             self.place_unit(unit, position)
-
 
     def place_unit(self, unit, position):
         x, y = position
-        if not self.can_place(x, y):
+        if not self.map_manager.can_place(x, y):
             return False
 
         unit.position = (x,y)
         self.units.append(unit)
-        return True
-
-
-
-    def can_place(self, x, y, obstacleTypes=["solid"], phasing=False): #return True if ALL OF 'obstacleTypes' tags are present in space
-        # outside map
-        if not (
-            0 <= x < self.map.width and
-            0 <= y < self.map.height
-        ):
-            print(f"Cannot place unit outside map!")
-            return False
-
-
-        tile = self.map.tiles[y][x]
-
-        # specified obstacle
-        if any(
-            any(tag in feature.tags for tag in obstacleTypes)
-            for feature in tile.features):
-
-            print(f"Cannot place unit inside an obstacle!")
-            return False
-
-        # occupied
-        if not phasing:
-            for unit in self.units:
-                if unit.position == (x,y):
-                    print(f"Space already occupied!")
-                    return False
-
         return True
 
     def random_spawn(self, width=5, side=0, clustering=0): #0-left, 1-top, 2-right, 3-bottom
