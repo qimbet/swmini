@@ -34,7 +34,10 @@ class Unit:
         self.icon_path = icon_path
         self.symbol = symbol
 
+        self.position = None
+
         self.health = health
+        self.current_health = health 
         self.defense = defense
         self.movement = movement
         self.detection_range = detection_range
@@ -57,6 +60,7 @@ class Unit:
             "symbol": self.symbol,
 
             "health": self.health,
+            "current_health": self.current_health,
             "defense": self.defense,
             "movement": self.movement,
             "detection_range": self.detection_range,
@@ -87,6 +91,7 @@ class Unit:
             symbol=data.get("symbol"),
 
             health=data["health"],
+            current_health=data["current_health"],
             defense=data["defense"],
             movement=data["movement"],
             detection_range=data["detection_range"],

@@ -15,7 +15,6 @@ class MapManager:
     - saving/loading state
     """
 
-
     def __init__(self, rng):
         self.rng = rng
         self.map = None
@@ -45,11 +44,8 @@ class MapManager:
         self.units.extend(player.army.units)
 
     def place_army(self, player):
-        deployment = DeploymentManager(
-            self,
-            rng=self.rng
-        )
-        deployment.deploy(player.army)
+        deployment = DeploymentManager(self)
+        deployment.deploy(player.army, side=player.side)
 
     # ---------------------------
     # Game state

@@ -74,6 +74,7 @@ class Game:
         while self.running:
             print("Game started. Running turn...")
             self.run_turn()
+            break
             #orchestrate turn cycle here
 
 
