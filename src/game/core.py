@@ -23,9 +23,11 @@ class Game:
         self.rng = random.Random(seed)
         self.factory = UnitInstantiator(unit_files or get_all_units())
         self.army_builder = ArmyBuilder(self.factory)
-        self.map_manager = MapManager(rng=self.rng,)
+        self.map_manager = MapManager(rng=self.rng)
 
         self.players = players or []
+        if self.players:
+            self.map_manager.active_player = self.players[0]
 
 
         if not map_file: #choose random map from dir if not specified
@@ -35,15 +37,6 @@ class Game:
             self.map_file = map_file 
 
         self.running = False
-
-
-    def create_armies(self):
-        for player in self.players:
-            player.army = self.army_builder.load_army(
-                player.path_to_army,
-                owner=player
-            )
-            player.assign_army(player.army)
 
     def setup(self):
         self.map_manager.load_map(self.map_file)
@@ -64,10 +57,6 @@ class Game:
     def add_player(self, player):
         self.map_manager.add_player(player)
 
-    def load_armies(self):
-        for player in self.map_manager.players:
-            self.map_manager.load_army(player.path_to_army)
-
     def load_players(self, player_configs):
         for config in player_configs:
             player = Player(name=config["name"], army_file=config["army"])
@@ -80,24 +69,17 @@ class Game:
     # ---------------------------
     def start(self):
         self.setup()
-        self.load_armies()
 
         self.running = True
         while self.running:
+            print("Game started. Running turn...")
             self.run_turn()
             #orchestrate turn cycle here
 
 
     def run_turn(self):
         print(f"Turn {self.map_manager.turn_number}")
-        active_player = (self.map_manager.active_player)
-
-        # Future:
-        # - player input
-        # - AI decisions
-        # - movement
-        # - combat
-        # - cleanup
+        self.display()
         self.map_manager.next_turn()
 
 
@@ -109,4 +91,4 @@ class Game:
     # Utilities
     # ---------------------------
     def display(self):
-        self.map_manager.map.display()
+        self.map_manager.map.display(self.map_manager.build_map_symbol)

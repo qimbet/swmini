@@ -16,13 +16,12 @@ class MapManager:
     """
 
 
-    def __init__(self, rng, unit_instantiator):
+    def __init__(self, rng):
         self.rng = rng
         self.map = None
         self.units = []
         self.players = []
 
-        self.factory = unit_instantiator
 
         self.turn_number = 0
         self.active_player = None
@@ -47,7 +46,7 @@ class MapManager:
 
     def place_army(self, player):
         deployment = DeploymentManager(
-            self.map,
+            self,
             rng=self.rng
         )
         deployment.deploy(player.army)
@@ -79,8 +78,13 @@ class MapManager:
             return False
         return True
 
+    def place_unit(self, unit, position):
+        if not self.can_place(position):
+            return False
+        unit.position = position
+        return True
 
-    def get_symbol(self, x, y): #Renders symbol for a tile; combines terrain + units
+    def build_map_symbol(self, x, y): #Renders symbol for a tile; combines terrain + units
         tile = self.map.tiles[y][x]
         
         terrain = tile.symbol() #Terrain
@@ -121,5 +125,3 @@ class MapManager:
             state = json.load(f)
         self.turn_number = state["turn"]
 
-        # reconstruct units here
-        # using UnitFactory
