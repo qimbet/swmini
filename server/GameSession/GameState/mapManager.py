@@ -90,7 +90,7 @@ class MapManager:
             symbol = terrain + unit.symbol
         else:
             symbol = terrain
-        return symbol[:3]
+        return symbol[:3].center(3)
 
     def get_unit_at(self, position):
         for unit in self.units:

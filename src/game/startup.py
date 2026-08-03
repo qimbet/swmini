@@ -20,7 +20,7 @@ def create_debug_game():
 
     print("Default players created. Creating game object.")
     return Game(
-        seed=1234,
+        seed=12334,
         map_file=None,
         unit_files=None,
         players=players

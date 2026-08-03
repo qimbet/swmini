@@ -224,7 +224,7 @@ class GameMap:
                 else:
                     symbol = self.tiles[y][x].symbol()
 
-                row += f" {symbol:<3} " #aw <3
+                row += f"{symbol:<3}" #aw <3
 
                 if x < self.width - 1:
                     edge = self.get_edge(
