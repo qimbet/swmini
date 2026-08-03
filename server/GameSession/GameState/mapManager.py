@@ -1,9 +1,7 @@
-from pathlib import Path
-import json, random
+import json
 
 from src.map.mapBuilder import GameMap
 from src.game.deploy_armies import DeploymentManager
-from src.classes.unit_instantiator import UnitInstantiator
 
 
 class MapManager:
@@ -12,7 +10,7 @@ class MapManager:
 
     Responsible for:
     - loading maps
-    - loading armies
+    - loading and placing armies
     - tracking units
     - saving/loading state
     """
@@ -36,17 +34,8 @@ class MapManager:
     def load_map(self, map_file):
         with open(map_file) as f:
             map_context = json.load(f)
-        self.map = GameMap(map_context, seed=self.seed)
+        self.map = GameMap(map_context, rng=self.rng)
 
-
-    def load_army(self, army_file):
-        deployment = DeploymentManager(
-            self.map,
-            self.unit_instantiator,
-            rng=self.rng
-        )
-        deployment.load_army(army_file)
-        self.units.extend(deployment.units)
 
 
     # ---------------------------
@@ -55,6 +44,16 @@ class MapManager:
 
     def add_player(self, player):
         self.players.append(player)
+
+    def load_army(self, player):
+        self.units.extend(player.army.units)
+
+    def place_army(self, player):
+        deployment = DeploymentManager(
+            self.map,
+            rng=self.rng
+        )
+        deployment.deploy(player.army)
 
     def next_turn(self):
         self.turn_number += 1
@@ -82,7 +81,6 @@ class MapManager:
 
         with open(path, "w") as f:
             json.dump(state, f, indent=2)
-
 
     def load_state(self, path):
         with open(path) as f:

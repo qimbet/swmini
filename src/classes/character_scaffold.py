@@ -8,13 +8,11 @@ class Unit:
             cost,
             faction,
             name,
-            fullArt_path,
-            icon_path,
 
             health,
             defense,
             movement,
-            detection,
+            detection_range,
 
             rarity,
             owner,
@@ -22,6 +20,9 @@ class Unit:
             attacks=None,
             abilities=None,
             passive=None,
+
+            fullArt_path=None,
+            icon_path=None,
         ):
 
         self.cost = cost
@@ -33,11 +34,10 @@ class Unit:
         self.health = health
         self.defense = defense
         self.movement = movement
-        self.detection = detection
+        self.detection_range = detection_range
 
         self.rarity = rarity
         self.owner = owner
-        self.original_owner = owner
 
         self.attacks = attacks or [] #can append to this list to 'equip'
         self.abilities = abilities or []
@@ -55,7 +55,7 @@ class Unit:
             "health": self.health,
             "defense": self.defense,
             "movement": self.movement,
-            "detection": self.detection,
+            "detection_range": self.detection_range,
 
             "rarity": self.rarity,
 
@@ -66,7 +66,6 @@ class Unit:
             # runtime state
             "position": self.position,
             "owner": self.owner,
-            "original_owner": self.original_owner,
             "status_effects": self.status_effects,
             "cooldowns": self.cooldowns,
         }
@@ -85,11 +84,10 @@ class Unit:
             health=data["health"],
             defense=data["defense"],
             movement=data["movement"],
-            detection=data["detection"],
+            detection_range=data["detection_range"],
 
             rarity=data["rarity"],
             owner=data["owner"],
-            original_owner=data["original_owner"],
 
             attacks=data["attacks"],
             abilities=data["abilities"],

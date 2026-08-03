@@ -36,8 +36,9 @@ WALL_EDGE_TYPE = {
 }
 
 class GameMap:
-    def __init__(self, mapContext, seed=None):
-        self.rng = random.Random(seed)
+    def __init__(self, mapContext, rng=None):
+        self.rng = rng if rng else random.Random(rng) 
+
         mapSize = mapContext.get("base")
         if mapSize is None:
             raise KeyError("mapContext missing 'base' key")

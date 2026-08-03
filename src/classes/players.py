@@ -6,23 +6,21 @@ class Player:
         path_to_army,
         side,
     ):
+
         self.name = name
         self.faction = faction
+        self.army = None
         self.path_to_army = path_to_army
         self.side = side
 
         # Runtime state
         self.units = []
 
+    def assign_army(self, army):
+        self.army=army
 
-    def add_unit(self, unit):
-        self.units.append(unit)
 
-
-    def export(self):
-        """
-        Used for saving player data.
-        """
+    def export(self): #save player data.
         return {
             "name": self.name,
             "faction": self.faction,

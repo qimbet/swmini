@@ -11,6 +11,6 @@ class UnitInstantiator:
             with open(path) as f:
                 self.database[faction] = json.load(f) #lookup by [faction][name]
 
-    def create(self, faction, unit_type):
+    def create(self, faction, unit_type, owner):
         data = self.database[faction][unit_type]
-        return Unit(**data)
+        return Unit(**data, owner=owner)

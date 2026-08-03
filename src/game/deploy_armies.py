@@ -1,36 +1,17 @@
-import json
 import random
 
 
 class DeploymentManager:
-    def __init__(self, game_map, unit_instantiator, rng=None):
+    def __init__(self, game_map, rng=None):
         self.rng = rng or random.Random()
-        
         self.map = game_map
-        self.factory = unit_instantiator
-        self.units = []
 
-    def load_army(self, pathToArmy, side=0):
-        with open(pathToArmy) as f:
-            army = json.load(f)
+    def deploy(self, army, positions=None):
+        for unit, position in zip(army.units, positions):
+            if position is None:
+                position = self.random_spawn()
 
-        faction = army["faction"]
-
-        for entry in army["units"]:
-            unit_type = entry["type"]
-
-            for pos in entry["position"]:
-                unit = self.factory.create(faction, unit_type)
-                location = (pos["x"], pos["y"])
-
-                if None in location:
-                    location = self.random_spawn(side=side)
-
-                self.place_unit(
-                    unit,
-                    location
-                )
-
+            self.place_unit(unit, position)
 
 
     def place_unit(self, unit, position):

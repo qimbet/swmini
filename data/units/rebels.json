@@ -1,6 +1,7 @@
 {
     "sniper": {
         "name": "Sharpshooter",
+        "symbol": "RS",
         "faction": "rebel",
         "cost": 12,
 
@@ -22,6 +23,7 @@
 
     "trooper": {
         "name": "Rebel",
+        "symbol": "RT",
         "faction": "rebel",
         "cost": 6,
 

@@ -18,18 +18,17 @@ def create_debug_game():
         )
     ]
 
+    print("Default players created. Creating game object.")
     return Game(
         seed=1234,
-        map_file="src/data/maps/mapLayout.json",
-        unit_files={
-            "rebels": "src/data/units/rebels.json",
-            "imperials": "src/data/units/imperials.json",
-        },
+        map_file=None,
+        unit_files=None,
         players=players
     )
 
 
 def main():
+    print("Beginning test game")
     game = create_debug_game()
     game.start()
 

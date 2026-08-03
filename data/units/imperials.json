@@ -1,6 +1,7 @@
 {
     "sniper": {
         "name": "Sniper",
+        "symbol": "IS",
         "faction": "Imperial",
         "cost": 9,
 
@@ -22,6 +23,7 @@
 
     "trooper": {
         "name": "Trooper",
+        "symbol": "IT",
         "faction": "Imperial",
         "cost": 5,
 
