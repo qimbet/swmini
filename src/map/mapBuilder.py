@@ -57,6 +57,8 @@ class GameMap:
         self.edges = {}
         self.placed_obstacles = [] #encodes position for randomly-placed objects
 
+        self.spawn_parameters = mapContext.get("spawn_parameters")
+
         featureData = mapContext.get("features", {})
         self.generate_features(featureData)
 
@@ -206,11 +208,10 @@ class GameMap:
 
     def generate_features(self, mapContextData):
         obstaclesData = mapContextData.get("obstacles", {})
-        self._place_obstacles(obstaclesData)
-
         wallsData = mapContextData.get("walls", {})
         self._place_walls(wallsData)
 
+        self._place_obstacles(obstaclesData)
         self._build_obstacle_enclosures()
 
 

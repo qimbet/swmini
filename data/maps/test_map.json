@@ -1,15 +1,32 @@
 {
-    "base" : {"width": 28, "height": 20},
+    "base" : {"width": 16, "height": 20},
+    "spawn_parameters": {
+        "top": {
+            "band_width": 4,
+            "window": null
+        },
+        "right": {
+            "band_width": 4,
+            "window": {
+                "center": 8, 
+                "spread": 2
+            }
+        },
+        "bottom": {
+            "band_width": 4,
+            "window": null
+        },
+        "left": {
+            "band_width": 1,
+            "window": null
+        }
+    },
     "features": { 
         "comment": "position takes either null or [x,y]",
         "walls" : {
             "vertical": [
                 {
-                    "length":7,
-                    "position":null
-                },
-                {
-                    "length":12,
+                    "length":6,
                     "position":[2,2]
                 }, 
                 {
@@ -23,22 +40,6 @@
                     "position":null
                 },
                 {
-                    "length":10,
-                    "position":null
-                },
-                {
-                    "length":7,
-                    "position":null
-                }
-            ],
-            "diag_down": [
-                {
-                    "length":1,
-                    "position":null
-                }
-            ],
-            "diag_up": [
-                {
                     "length":2,
                     "position":null
                 }
@@ -50,11 +51,6 @@
                 {
                     "length": 4,
                     "width": 2,
-                    "position": null
-                },
-                {
-                    "length": 3,
-                    "width": 3,
                     "position": null
                 }
             ],
@@ -73,12 +69,7 @@
                 },
                 {
                     "length": 1,
-                    "width": 3,
-                    "position": null
-                },
-                {
-                    "length": 5,
-                    "width": 2,
+                    "width": 1,
                     "position": null
                 }
             ],
@@ -86,11 +77,6 @@
                 {
                     "length": 4,
                     "width": 2,
-                    "position": null
-                }, 
-                {
-                    "length": 1,
-                    "width": 6,
                     "position": null
                 }
             ],
@@ -118,16 +104,6 @@
                 {
                     "length": 1,
                     "width": 1,
-                    "position": null
-                }, 
-                {
-                    "length": 1,
-                    "width": 1,
-                    "position": null
-                }, 
-                {
-                    "length": 3,
-                    "width": 2,
                     "position": null
                 }
            ]

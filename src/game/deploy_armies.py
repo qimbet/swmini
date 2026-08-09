@@ -20,29 +20,67 @@ class DeploymentManager:
         unit.position = position
         return True
 
-    def random_spawn(self, width=4, side=0, clustering=0): #0-left, 1-top, 2-right, 3-bottom
+    def random_spawn(self, side): #0-left, 1-top, 2-right, 3-bottom
         game_map = self.map_manager.map
-        if side == 0:       # left
-            x_range = (0, width - 1)
-            y_range = (0, game_map.height - 1)
-        elif side == 1:     # top
-            x_range = (0, game_map.width - 1)
-            y_range = (0, width - 1)
-        elif side == 2:     # right
-            x_range = (game_map.width - width, game_map.width - 1)
-            y_range = (0, game_map.height - 1)
-        elif side == 3:     # bottom
-            x_range = (0, game_map.width - 1)
-            y_range = (game_map.height - width, game_map.height - 1)
+        width = game_map.width
+        height = game_map.height
 
+        spawn = game_map.spawn_parameters
+        side_names = {
+            0: "left",
+            1: "top",
+            2: "right",
+            3: "bottom"
+        }
+
+        if side not in side_names:
+            raise ValueError(f"Invalid spawn side given! {side}")
+
+        config = spawn[side_names[side]]
+        band_width = config['band_width']
+        window = config['window']
+
+        if window is None: 
+            if side in (0, 2): #left, right -- maximum vertical spawn range
+                perpendicular_range = (0, height-1)
+            else: 
+                perpendicular_range = (0, width-1)
         else:
-            raise ValueError(f"Invalid spawn side: {side}")
+            center = window['center']
+            spread = window['spread']
+            
+            min_value = max(0, center - spread)
+            max_value = min(
+                   (height - 1) if side in (0,2) else (width -1),
+                    center + spread
+                )
+            perpendicular_range = (min_value, max_value)
 
-        for _ in range(150):
-            x = self.rng.randint(*x_range)
-            y = self.rng.randint(*y_range)
+        if side == 0:  # LEFT
+            x_range = (0, band_width - 1)
+            y_range = perpendicular_range
+
+        elif side == 1:  # TOP
+            x_range = perpendicular_range
+            y_range = (0, band_width - 1)
+
+        elif side == 2:  # RIGHT
+            x_range = (width - band_width, width - 1)
+            y_range = perpendicular_range
+
+        elif side == 3:  # BOTTOM
+            x_range = perpendicular_range
+            y_range = (height - band_width, height - 1)
+
+        
+        tryCount = 0
+        while tryCount < 15:
+            x = self.rng.randint(x_range[0], x_range[1])
+            y = self.rng.randint(y_range[0], y_range[1])
+
             if self.map_manager.can_place((x, y)):
                 return (x, y)
+            tryCount += 1
 
         raise RuntimeError(
             f"Could not find spawn location on side {side}"

@@ -5,10 +5,6 @@
             "type": "sniper",
             "position": [
                     {"x": null, "y": null},
-                    {"x": null, "y": null},
-                    {"x": null, "y": null},
-                    {"x": null, "y": null},
-                    {"x": null, "y": null},
                     {"x": null, "y": null}
                 ]
         },
@@ -16,8 +12,6 @@
         {
             "type": "brawler",
             "position": [
-                    {"x": null, "y": null},
-                    {"x": null, "y": null},
                     {"x": null, "y": null},
                     {"x": null, "y": null}
                 ]

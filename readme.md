@@ -10,5 +10,5 @@ Calling from PROJECT_ROOT ensures that src folder is visible to downstream funct
 
 -----------------------
 
-Test games can be run through src.game.startup.py
-
+Test games can be run via:   
+    python -m src.game.startup.py
