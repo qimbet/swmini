@@ -109,7 +109,7 @@ class MapManager:
                 print(f"Skipping active unit: \n{excludeUnit}")
                 continue
 
-            if unit.position == position:
+            if position in unit.occupied_positions():
                 #print(f"Occupying unit: \n{unit}")
                 return unit
 

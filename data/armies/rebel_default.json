@@ -4,7 +4,8 @@
         {
             "type": "sniper",
             "position": [
-                    {"x": 1, "y": 1},
+                    {"x": null, "y": null},
+                    {"x": 0, "y": 2},
                     {"x": 2, "y": 5}
                 ]
         },
@@ -12,8 +13,9 @@
         {
             "type": "trooper",
             "position": [
-                    {"x": null, "y": null},
-                    {"x": null, "y": null},
+                    {"x": 2, "y": 1},
+                    {"x": 1, "y": 1},
+                    {"x": 2, "y": 2},
                     {"x": null, "y": null}
                 ]
         }

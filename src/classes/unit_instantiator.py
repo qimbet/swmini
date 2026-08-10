@@ -1,6 +1,5 @@
 import json
-
-from src.classes.character_scaffold import Unit
+from src.classes.character_scaffold import Unit, Footprint
 
 
 class UnitInstantiator:
@@ -12,5 +11,14 @@ class UnitInstantiator:
                 self.database[faction] = json.load(f) #lookup by [faction][name]
 
     def create(self, faction, unit_type, owner):
-        data = self.database[faction][unit_type]
-        return Unit(**data, owner=owner)
+        raw_data = self.database[faction][unit_type]
+        footprintData = raw_data['footprint']
+
+        footprint = Footprint(
+            width=footprintData['width'],
+            length=footprintData['length']
+        )
+        unitData = raw_data.copy()
+        unitData['footprint'] = footprint
+
+        return Unit(**unitData, owner=owner)

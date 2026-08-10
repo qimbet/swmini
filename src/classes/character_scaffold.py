@@ -1,6 +1,12 @@
 from src.classes.attacks import *
 from src.classes.abilities import *
 
+from dataclasses import dataclass
+
+@dataclass
+class Footprint:
+    width: int
+    length: int
 
 class Unit:
     def __init__( #better to pass these as a dict; later unpacked
@@ -36,7 +42,7 @@ class Unit:
         self.symbol = symbol
 
         self.position = None
-        self.footprint = {"length":1, "width": 1}
+        self.footprint =  footprint
 
         self.health = health
         self.current_health = health 
@@ -50,6 +56,29 @@ class Unit:
         self.attacks = attacks or [] #can append to this list to 'equip'
         self.abilities = abilities or []
         self.passive = passive or []
+
+    
+    def occupied_positions(self, position=None):
+        """
+        Return all map cells occupied by this unit.
+        position is the top-left/anchor position.
+        """
+        if position is None:
+            position = self.position
+
+        if position is None:
+            return []
+
+        x, y = position
+        length = self.footprint.length
+        width = self.footprint.width
+
+        return [
+            (x + dx, y + dy)
+            for dy in range(length)
+            for dx in range(width)
+        ]
+
 
     def exportUnit(self):
         return {
