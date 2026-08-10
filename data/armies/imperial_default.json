@@ -1,8 +1,12 @@
 {
     "faction": "imperials",
+    "notes": [
+        "It's better to place larger-footprint units on the map before others. ",
+        "This is done by ordering the units list"
+    ],
     "units":[
         {
-            "type": "sniper",
+            "type": "brawler",
             "position": [
                     {"x": null, "y": null},
                     {"x": null, "y": null}
@@ -10,7 +14,7 @@
         },
 
         {
-            "type": "brawler",
+            "type": "sniper",
             "position": [
                     {"x": null, "y": null},
                     {"x": null, "y": null}

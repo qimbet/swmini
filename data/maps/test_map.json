@@ -9,7 +9,7 @@
             }
         },
         "right": {
-            "band_width": 4,
+            "band_width": 5,
             "window": null
         },
         "bottom": {

@@ -15,13 +15,13 @@ class DeploymentManager:
             unit = army_unit.unit
             print(f"\n.\nDeploymentManager/deploy: unit: {unit}")
 
-            position = self.spawn_unit(side=side, unit=army_unit)
+            position = self.spawn_unit(side=side, army_unit=army_unit)
 
             unit.position = position
 
 
 
-    def spawn_unit(self, side, unit): #assigns a random location if not specified
+    def spawn_unit(self, side, army_unit): #assigns a random location if not specified
         #0-left, 1-top, 2-right, 3-bottom
         game_map = self.map_manager.map
         width = game_map.width
@@ -75,8 +75,8 @@ class DeploymentManager:
             y_range = (height - band_width, height - 1)
 
         
-        tryCount = 0
-        startPosition = unit.start_position
+        unit = army_unit.unit
+        startPosition = army_unit.start_position
         print(f"startPosition: {startPosition}")
         x_default = startPosition['x']
         y_default = startPosition['y']
@@ -84,7 +84,8 @@ class DeploymentManager:
         print(f"x_default: {x_default}")
         print(f"y_default: {y_default}")
 
-        while tryCount < 5:
+        tryCount = 0
+        while tryCount < 10:
             rand_x = self.rng.randint(x_range[0], x_range[1])
             rand_y = self.rng.randint(y_range[0], y_range[1])
 

@@ -65,29 +65,34 @@ class MapManager:
         """)
 
         
-        x, y = position
-        #x = position.get("x")
-        #y = position.get("y")
-        if not (
-            0 <= x < self.map.width and
-            0 <= y < self.map.height
-        ):
-            print("Attemped placement out of map bounds!")
-            return False
-
-        tile = self.map.tiles[y][x]
-
-        for feature in tile.features:
-            if any(
-                tag in feature.tags
-                for tag in obstacle_types
+        if unitToPlace is None:
+            positions =  [position]
+        else: 
+            positions = unitToPlace.occupied_positions(position)
+        for x, y in positions:
+            #x, y = position
+            #x = position.get("x")
+            #y = position.get("y")
+            if not (
+                0 <= x < self.map.width and
+                0 <= y < self.map.height
             ):
-                print("Cannot place unit on impassable terrain!")
+                print("Attemped placement out of map bounds!")
                 return False
 
-        if self.get_unit_at(position, excludeUnit=unitToPlace):
-            print("Cannot place unit in an occupied tile!")
-            return False
+            tile = self.map.tiles[y][x]
+
+            for feature in tile.features:
+                if any(
+                    tag in feature.tags
+                    for tag in obstacle_types
+                ):
+                    print("Cannot place unit on impassable terrain!")
+                    return False
+
+            if self.get_unit_at(position, excludeUnit=unitToPlace):
+                print("Cannot place unit in an occupied tile!")
+                return False
 
         return True
 
