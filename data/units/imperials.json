@@ -10,6 +10,11 @@
         "movement": 5,
         "detection_range": 12,
 
+        "footprint": {
+            "length": 1, 
+            "width": 1
+        },
+
         "attacks": [
             "sniper_rifle"
         ],
@@ -31,6 +36,11 @@
         "defense": 18,
         "movement": 6,
         "detection_range": 12,
+
+        "footprint": {
+            "length": 1, 
+            "width": 1
+        },
 
         "attacks": [
             "blaster"

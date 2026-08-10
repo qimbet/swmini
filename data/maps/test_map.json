@@ -3,21 +3,21 @@
     "spawn_parameters": {
         "top": {
             "band_width": 4,
-            "window": null
-        },
-        "right": {
-            "band_width": 4,
             "window": {
                 "center": 8, 
                 "spread": 2
             }
+        },
+        "right": {
+            "band_width": 4,
+            "window": null
         },
         "bottom": {
             "band_width": 4,
             "window": null
         },
         "left": {
-            "band_width": 1,
+            "band_width": 4,
             "window": null
         }
     },

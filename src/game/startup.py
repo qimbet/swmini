@@ -1,8 +1,9 @@
+import argparse, random
 from src.game.core import Game
 from src.classes.players import Player
 
 
-def create_debug_game():
+def create_debug_game(seed=None):
     players = [
         Player(
             name="Alice",
@@ -18,22 +19,28 @@ def create_debug_game():
         )
     ]
 
-    print("Default players created. Creating game object.")
+    print("Default players created. Creating game object.\n.\n.")
     return Game(
-        seed=124,
+        seed=seed if seed else 0,
         map_file=None,
         unit_files=None,
         players=players
     )
 
 
-def main():
+def main(seed):
     print("Beginning test game")
-    game = create_debug_game()
+    game = create_debug_game(seed=seed)
     game.start()
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--seed", type=int, default=None)
+    args = parser.parse_args()
+
+    seed = args.seed if args.seed is not None else random.randint(0, 2**32 -1)
+
+    main(seed=seed)
 
 

@@ -41,7 +41,10 @@ class MapManager:
         self.players.append(player)
 
     def load_army(self, player):
-        self.units.extend(player.army.units)
+        self.units.extend(
+            army_unit.unit
+            for army_unit in player.army.units
+        )
 
     def place_army(self, player):
         deployment = DeploymentManager(self)
@@ -53,12 +56,23 @@ class MapManager:
     def next_turn(self):
         self.turn_number += 1
 
-    def can_place(self, position, obstacle_types=("solid",)):
+    def can_place(self, position, unitToPlace=None, obstacle_types=("solid",)):
+        #updateflag: obstacle_types should be a unit property
+        print(f"""mapmanager/can_place
+            position: {position}
+            mapwidth: {self.map.width}
+            mapheight: {self.map.height}
+        """)
+
+        
         x, y = position
+        #x = position.get("x")
+        #y = position.get("y")
         if not (
             0 <= x < self.map.width and
             0 <= y < self.map.height
         ):
+            print("Attemped placement out of map bounds!")
             return False
 
         tile = self.map.tiles[y][x]
@@ -68,16 +82,13 @@ class MapManager:
                 tag in feature.tags
                 for tag in obstacle_types
             ):
+                print("Cannot place unit on impassable terrain!")
                 return False
 
-        if self.get_unit_at(position):
+        if self.get_unit_at(position, excludeUnit=unitToPlace):
+            print("Cannot place unit in an occupied tile!")
             return False
-        return True
 
-    def place_unit(self, unit, position):
-        if not self.can_place(position):
-            return False
-        unit.position = position
         return True
 
     def build_map_symbol(self, x, y): #Renders symbol for a tile; combines terrain + units
@@ -92,10 +103,16 @@ class MapManager:
             symbol = terrain
         return symbol[:3].center(3)
 
-    def get_unit_at(self, position):
+    def get_unit_at(self, position, excludeUnit=None):
         for unit in self.units:
+            if unit is excludeUnit:
+                print(f"Skipping active unit: \n{excludeUnit}")
+                continue
+
             if unit.position == position:
+                #print(f"Occupying unit: \n{unit}")
                 return unit
+
         return None
 
 

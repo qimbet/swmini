@@ -16,6 +16,7 @@ class Unit:
 
             rarity,
             owner,
+            footprint,
 
             attacks=None,
             abilities=None,
@@ -35,6 +36,7 @@ class Unit:
         self.symbol = symbol
 
         self.position = None
+        self.footprint = {"length":1, "width": 1}
 
         self.health = health
         self.current_health = health 
@@ -64,6 +66,8 @@ class Unit:
             "defense": self.defense,
             "movement": self.movement,
             "detection_range": self.detection_range,
+
+            "footprint": self.footprint,
 
             "rarity": self.rarity,
 
@@ -95,6 +99,8 @@ class Unit:
             defense=data["defense"],
             movement=data["movement"],
             detection_range=data["detection_range"],
+
+            footprint=data["footprint"],
 
             rarity=data["rarity"],
             owner=data["owner"],

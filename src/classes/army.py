@@ -1,4 +1,10 @@
+from dataclasses import dataclass
 import json
+
+@dataclass
+class ArmyUnit:
+    unit: object
+    start_position: tuple | None = None
 
 class Army:
     def __init__(self, owner, faction):
@@ -6,8 +12,12 @@ class Army:
         self.faction = faction
         self.units = []
 
-    def add_unit(self, unit):
-        self.units.append(unit)
+    def add_unit(self, unit, position=None):
+        self.units.append(
+            ArmyUnit(
+                unit=unit, start_position=position
+            )
+        )
 
 
 class ArmyBuilder:
@@ -23,16 +33,17 @@ class ArmyBuilder:
             faction=data["faction"]
         )
 
-        for entry in data["units"]:
+        for entry in data["units"]: #type of unit
             unit_type = entry["type"]
+            positionList = entry["position"] #define number of units by placement
 
-            count = len(entry["position"])
-            for _ in range(count):
+            for unit_position in positionList:
+
                 unit = self.factory.create(
                     faction=data["faction"],
                     unit_type=unit_type,
-                    owner=owner
+                    owner=owner, 
                 )
-                army.add_unit(unit)
+                army.add_unit(unit, unit_position)
 
         return army

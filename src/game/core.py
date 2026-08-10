@@ -9,7 +9,7 @@ from server.GameSession.GameState.mapManager import MapManager
 
 
 def get_all_units(units_directory=UNITS):
-    print(f"get_all_units(): units_directory: {units_directory}")
+    #print(f"get_all_units(): units_directory: {units_directory}")
 
     unit_dir = Path(units_directory)
     return {
@@ -19,10 +19,12 @@ def get_all_units(units_directory=UNITS):
 
 
 class Game:
-    def __init__(self, seed=1234, map_file=None, unit_files=None, players=None):
+    def __init__(self, seed=None, map_file=None, unit_files=None, players=None):
+        seed = seed if seed is not None else random.randint(0, 2**32 -1)
+
         self.rng = random.Random(seed)
         self.factory = UnitInstantiator(unit_files or get_all_units())
-        self.army_builder = ArmyBuilder(self.factory)
+        self.army_builder = ArmyBuilder(self.factory) #army: [(unit, position), (...)]
         self.map_manager = MapManager(rng=self.rng)
 
         self.players = players or []

@@ -6,21 +6,23 @@ class DeploymentManager:
         self.rng = map_manager.rng or random.Random()
         self.map_manager=map_manager
 
-    def deploy(self, army, side, positions=None):
-        if positions is None:
-            positions = [None] * len(army.units)
-        for unit, position in zip(army.units, positions):
-            if position is None:
-                position = self.random_spawn(side=side)
-            self.place_unit(unit, position)
+    def deploy(self, army, side):
+        #army comes as a list of: [(unit, position)]
+        #where position is the dict defined in the .json army file
+        print(f"deploymentManager/deploy: army: {army}")
 
-    def place_unit(self, unit, position):
-        if not self.map_manager.can_place(position):
-            return False
-        unit.position = position
-        return True
+        for army_unit in army.units:
+            unit = army_unit.unit
+            print(f"\n.\nDeploymentManager/deploy: unit: {unit}")
 
-    def random_spawn(self, side): #0-left, 1-top, 2-right, 3-bottom
+            position = self.spawn_unit(side=side, unit=army_unit)
+
+            unit.position = position
+
+
+
+    def spawn_unit(self, side, unit): #assigns a random location if not specified
+        #0-left, 1-top, 2-right, 3-bottom
         game_map = self.map_manager.map
         width = game_map.width
         height = game_map.height
@@ -74,13 +76,27 @@ class DeploymentManager:
 
         
         tryCount = 0
-        while tryCount < 15:
-            x = self.rng.randint(x_range[0], x_range[1])
-            y = self.rng.randint(y_range[0], y_range[1])
+        startPosition = unit.start_position
+        print(f"startPosition: {startPosition}")
+        x_default = startPosition['x']
+        y_default = startPosition['y']
 
-            if self.map_manager.can_place((x, y)):
-                return (x, y)
+        print(f"x_default: {x_default}")
+        print(f"y_default: {y_default}")
+
+        while tryCount < 5:
+            rand_x = self.rng.randint(x_range[0], x_range[1])
+            rand_y = self.rng.randint(y_range[0], y_range[1])
+
+            x = x_default if x_default is not None else rand_x 
+            y = y_default if y_default is not None else rand_y
+            position = (x,y)
+            print(f"Position: {position}")
+
+            if self.map_manager.can_place(position, unitToPlace=unit):
+                return position
             tryCount += 1
+            print(f"retrying... {tryCount}")
 
         raise RuntimeError(
             f"Could not find spawn location on side {side}"
