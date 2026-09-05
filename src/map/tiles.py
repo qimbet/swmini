@@ -12,6 +12,21 @@ class Tile:
             return " "
         return self.features[-1].symbol()
 
+    def blocks_movement(self):
+        return any(
+            feature.blocks_movement()
+            for feature in self.features
+        )
+
+    def movement_cost(self):
+        if self.blocks_movement():
+            return float("inf")
+
+        return sum(
+            feature.movement_cost()
+            for feature in self.features
+        )
+
 class TileFeature:
     def symbol(self):
         return "c"
