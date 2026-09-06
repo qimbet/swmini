@@ -1,0 +1,224 @@
+========================================
+Run 10
+========================================
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 44, in <module>
+    main(seed=seed)
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 34, in main
+    game.start()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 73, in start
+    self.setup()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 51, in setup
+    self.map_manager.place_army(player)
+  File "/home/jmattie/code/games/swmini/server/GameSession/GameState/mapManager.py", line 51, in place_army
+    deployment.deploy(player.army, side=player.side)
+  File "/home/jmattie/code/games/swmini/src/game/deploy_armies.py", line 43, in deploy
+    raise RuntimeError(
+RuntimeError: Could not place fixed unit 'Rebel' at (1, 1): Cannot place unit on impassable terrain!
+ SolidObstacle
+project root: /home/jmattie/code/games/swmini
+Beginning test game
+Default players created. Creating game object.
+.
+.
+Tile already occupied
+deploymentManager/deploy: army: <src.classes.army.Army object at 0x7f27e12d9520>
+
+========================================
+Run 13
+========================================
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 44, in <module>
+    main(seed=seed)
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 34, in main
+    game.start()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 73, in start
+    self.setup()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 51, in setup
+    self.map_manager.place_army(player)
+  File "/home/jmattie/code/games/swmini/server/GameSession/GameState/mapManager.py", line 51, in place_army
+    deployment.deploy(player.army, side=player.side)
+  File "/home/jmattie/code/games/swmini/src/game/deploy_armies.py", line 43, in deploy
+    raise RuntimeError(
+RuntimeError: Could not place fixed unit 'Sharpshooter' at (2, 5): Cannot place unit on impassable terrain!
+ SolidObstacle
+project root: /home/jmattie/code/games/swmini
+Beginning test game
+Default players created. Creating game object.
+.
+.
+deploymentManager/deploy: army: <src.classes.army.Army object at 0x7f8eeec65340>
+
+========================================
+Run 28
+========================================
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 44, in <module>
+    main(seed=seed)
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 34, in main
+    game.start()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 73, in start
+    self.setup()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 51, in setup
+    self.map_manager.place_army(player)
+  File "/home/jmattie/code/games/swmini/server/GameSession/GameState/mapManager.py", line 51, in place_army
+    deployment.deploy(player.army, side=player.side)
+  File "/home/jmattie/code/games/swmini/src/game/deploy_armies.py", line 43, in deploy
+    raise RuntimeError(
+RuntimeError: Could not place fixed unit 'Sharpshooter' at (2, 5): Cannot place unit on impassable terrain!
+ SolidObstacle
+project root: /home/jmattie/code/games/swmini
+Beginning test game
+Default players created. Creating game object.
+.
+.
+Tile already occupied
+deploymentManager/deploy: army: <src.classes.army.Army object at 0x7f58e97e5670>
+
+========================================
+Run 38
+========================================
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 44, in <module>
+    main(seed=seed)
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 34, in main
+    game.start()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 73, in start
+    self.setup()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 51, in setup
+    self.map_manager.place_army(player)
+  File "/home/jmattie/code/games/swmini/server/GameSession/GameState/mapManager.py", line 51, in place_army
+    deployment.deploy(player.army, side=player.side)
+  File "/home/jmattie/code/games/swmini/src/game/deploy_armies.py", line 43, in deploy
+    raise RuntimeError(
+RuntimeError: Could not place fixed unit 'Rebel' at (1, 1): Cannot place unit on impassable terrain!
+ SolidObstacle
+project root: /home/jmattie/code/games/swmini
+Beginning test game
+Default players created. Creating game object.
+.
+.
+Tile already occupied
+Tile already occupied
+Tile already occupied
+deploymentManager/deploy: army: <src.classes.army.Army object at 0x7fe6358214f0>
+
+========================================
+Run 46
+========================================
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 44, in <module>
+    main(seed=seed)
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 34, in main
+    game.start()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 73, in start
+    self.setup()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 51, in setup
+    self.map_manager.place_army(player)
+  File "/home/jmattie/code/games/swmini/server/GameSession/GameState/mapManager.py", line 51, in place_army
+    deployment.deploy(player.army, side=player.side)
+  File "/home/jmattie/code/games/swmini/src/game/deploy_armies.py", line 43, in deploy
+    raise RuntimeError(
+RuntimeError: Could not place fixed unit 'Sharpshooter' at (2, 5): Cannot place unit on impassable terrain!
+ SolidObstacle
+project root: /home/jmattie/code/games/swmini
+Beginning test game
+Default players created. Creating game object.
+.
+.
+deploymentManager/deploy: army: <src.classes.army.Army object at 0x7f3b229194c0>
+
+========================================
+Run 68
+========================================
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 44, in <module>
+    main(seed=seed)
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 34, in main
+    game.start()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 73, in start
+    self.setup()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 51, in setup
+    self.map_manager.place_army(player)
+  File "/home/jmattie/code/games/swmini/server/GameSession/GameState/mapManager.py", line 51, in place_army
+    deployment.deploy(player.army, side=player.side)
+  File "/home/jmattie/code/games/swmini/src/game/deploy_armies.py", line 43, in deploy
+    raise RuntimeError(
+RuntimeError: Could not place fixed unit 'Rebel' at (2, 1): Cannot place unit on impassable terrain!
+ SolidObstacle
+project root: /home/jmattie/code/games/swmini
+Beginning test game
+Default players created. Creating game object.
+.
+.
+Tile already occupied
+Tile already occupied
+deploymentManager/deploy: army: <src.classes.army.Army object at 0x7f5224719490>
+
+========================================
+Run 87
+========================================
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 44, in <module>
+    main(seed=seed)
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 34, in main
+    game.start()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 73, in start
+    self.setup()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 51, in setup
+    self.map_manager.place_army(player)
+  File "/home/jmattie/code/games/swmini/server/GameSession/GameState/mapManager.py", line 51, in place_army
+    deployment.deploy(player.army, side=player.side)
+  File "/home/jmattie/code/games/swmini/src/game/deploy_armies.py", line 43, in deploy
+    raise RuntimeError(
+RuntimeError: Could not place fixed unit 'Rebel' at (2, 1): Cannot place unit on impassable terrain!
+ SolidObstacle
+project root: /home/jmattie/code/games/swmini
+Beginning test game
+Default players created. Creating game object.
+.
+.
+deploymentManager/deploy: army: <src.classes.army.Army object at 0x7efc51e81490>
+
+========================================
+Run 100
+========================================
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 44, in <module>
+    main(seed=seed)
+  File "/home/jmattie/code/games/swmini/src/game/startup.py", line 34, in main
+    game.start()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 73, in start
+    self.setup()
+  File "/home/jmattie/code/games/swmini/src/game/core.py", line 51, in setup
+    self.map_manager.place_army(player)
+  File "/home/jmattie/code/games/swmini/server/GameSession/GameState/mapManager.py", line 51, in place_army
+    deployment.deploy(player.army, side=player.side)
+  File "/home/jmattie/code/games/swmini/src/game/deploy_armies.py", line 43, in deploy
+    raise RuntimeError(
+RuntimeError: Could not place fixed unit 'Rebel' at (2, 1): Cannot place unit on impassable terrain!
+ SolidObstacle
+project root: /home/jmattie/code/games/swmini
+Beginning test game
+Default players created. Creating game object.
+.
+.
+Tile already occupied
+deploymentManager/deploy: army: <src.classes.army.Army object at 0x7f343a9194f0>
+

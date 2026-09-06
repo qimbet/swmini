@@ -32,6 +32,10 @@ class MapManager:
     def load_map(self, map_file):
         with open(map_file) as f:
             map_context = json.load(f)
+
+        #instantiate reserved_positions here
+
+
         self.map = GameMap(map_context, rng=self.rng)
 
     # ---------------------------
@@ -56,13 +60,13 @@ class MapManager:
     def next_turn(self):
         self.turn_number += 1
 
-    def can_place(self, position, unitToPlace=None, obstacle_types=("solid",)):
+    def can_place(self, position, unitToPlace=None, obstacle_types=("solid",), return_reason=False):
         #updateflag: obstacle_types should be a unit property
-        print(f"""mapmanager/can_place
-            position: {position}
-            mapwidth: {self.map.width}
-            mapheight: {self.map.height}
-        """)
+#        print(f"""mapmanager/can_place
+#            position: {position}
+#            mapwidth: {self.map.width}
+#            mapheight: {self.map.height}
+#        """)
 
         
         if unitToPlace is None:
@@ -77,8 +81,9 @@ class MapManager:
                 0 <= x < self.map.width and
                 0 <= y < self.map.height
             ):
-                print("Attemped placement out of map bounds!")
-                return False
+                reason = f"position {(x, y)} is outside the map bounds ({self.map.width}x{self.map.height})" 
+                if return_reason: 
+                    return False, reason
 
             tile = self.map.tiles[y][x]
 
@@ -87,14 +92,16 @@ class MapManager:
                     tag in feature.tags
                     for tag in obstacle_types
                 ):
-                    print("Cannot place unit on impassable terrain!")
-                    return False
+                    reason = f"Cannot place unit on impassable terrain!\n {feature.__class__.__name__}"
+                    if return_reason:
+                        return False, reason
+                    return False, ""
 
             if self.get_unit_at(position, excludeUnit=unitToPlace):
                 print("Cannot place unit in an occupied tile!")
-                return False
+                return False, ""
 
-        return True
+        return True, ""
 
     def build_map_symbol(self, x, y): #Renders symbol for a tile; combines terrain + units
         tile = self.map.tiles[y][x]
@@ -111,7 +118,7 @@ class MapManager:
     def get_unit_at(self, position, excludeUnit=None):
         for unit in self.units:
             if unit is excludeUnit:
-                print(f"Skipping active unit: \n{excludeUnit}")
+#                print(f"Skipping active unit: \n{excludeUnit}")
                 continue
 
             if position in unit.occupied_positions():
@@ -120,6 +127,26 @@ class MapManager:
 
         return None
 
+    def get_fixed_army_positions(self):
+        positions = []
+
+        for player in self.players:
+            for army_unit in player.army.units:
+
+                position = army_unit.start_position
+
+                if position is None:
+                    continue
+
+                x = position.get("x")
+                y = position.get("y")
+
+                # Only reserve positions where both coordinates
+                # were explicitly supplied.
+                if x is not None and y is not None:
+                    positions.append((x, y))
+
+        return positions
 
     # ---------------------------
     # Serialization
