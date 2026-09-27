@@ -20,8 +20,9 @@ class DeploymentManager:
             unit = army_unit.unit
             start_position = army_unit.start_position
 
-            x = start_position["x"]
-            y = start_position["y"]
+            x, y = start_position
+#            x = start_position["x"]
+#            y = start_position["y"]
 
             if x is None or y is None:
                 continue
@@ -53,9 +54,10 @@ class DeploymentManager:
         for army_unit in army.units:
             unit = army_unit.unit
             start_position = army_unit.start_position
+            x, y = start_position
 
-            x = start_position["x"]
-            y = start_position["y"]
+#            x = start_position["x"]
+#            y = start_position["y"]
 
             if x is not None and y is not None:
                 continue
@@ -123,10 +125,14 @@ class DeploymentManager:
 
         
         unit = army_unit.unit
-        startPosition = army_unit.start_position
+        start_position = army_unit.start_position
 
-        x_default = startPosition['x']
-        y_default = startPosition['y']
+
+        if start_position is None:
+            x_default = None
+            y_default = None
+        else:
+            x_default, y_default = start_position
 
         valid_positions = []
         for x in range(x_range[0], x_range[1]):
@@ -143,19 +149,6 @@ class DeploymentManager:
         if not valid_positions:
             raise RuntimeError(f"Could not find spawn location on the {side_names[side]} side ")
 
-#        if x_default is None and y_default is None:
-#            position = self.rng.choice(valid_positions)
-#        else:
-#            random_position = self.rng.choice(valid_positions)
-#
-#            x = x_default if x_default is not None else random_position[0]
-#            y = y_default if y_default is not None else random_position[1]
-#
-#            position = (x,y)
-#        
-#        print(f"Position: {position}")
-#        if self.map_manager.can_place(position, unitToPlace=unit):
-#            return position
         return self.rng.choice(valid_positions)
 
 #       raise RuntimeError(f"Could not find spawn location for {army_unit} on the {side_names[side]} side")

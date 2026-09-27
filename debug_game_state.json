@@ -1,0 +1,4615 @@
+{
+  "schema_version": 1,
+  "seed": 4256508273,
+  "turn_number": 1,
+  "active_player_id": 0,
+  "running": true,
+  "map": {
+    "width": 20,
+    "height": 30,
+    "tiles": [
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "DenseCover",
+              "symbol": "=",
+              "tags": [
+                "cover",
+                "obstruction"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 2,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "DenseCover",
+              "symbol": "=",
+              "tags": [
+                "cover",
+                "obstruction"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 2,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "DenseCover",
+              "symbol": "=",
+              "tags": [
+                "cover",
+                "obstruction"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 2,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "DenseCover",
+              "symbol": "=",
+              "tags": [
+                "cover",
+                "obstruction"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 2,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "Pit",
+              "symbol": "U",
+              "tags": [],
+              "blocks_movement": true,
+              "movement_cost": 1,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "Pit",
+              "symbol": "U",
+              "tags": [],
+              "blocks_movement": true,
+              "movement_cost": 1,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "Pit",
+              "symbol": "U",
+              "tags": [],
+              "blocks_movement": true,
+              "movement_cost": 1,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "Pit",
+              "symbol": "U",
+              "tags": [],
+              "blocks_movement": true,
+              "movement_cost": 1,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "ShallowPit",
+              "symbol": "u",
+              "tags": [],
+              "blocks_movement": false,
+              "movement_cost": 1.5,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "ShallowPit",
+              "symbol": "u",
+              "tags": [],
+              "blocks_movement": false,
+              "movement_cost": 1.5,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "ShallowPit",
+              "symbol": "u",
+              "tags": [],
+              "blocks_movement": false,
+              "movement_cost": 1.5,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "Pit",
+              "symbol": "U",
+              "tags": [],
+              "blocks_movement": true,
+              "movement_cost": 1,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "Pit",
+              "symbol": "U",
+              "tags": [],
+              "blocks_movement": true,
+              "movement_cost": 1,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "ShallowPit",
+              "symbol": "u",
+              "tags": [],
+              "blocks_movement": false,
+              "movement_cost": 1.5,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "ShallowPit",
+              "symbol": "u",
+              "tags": [],
+              "blocks_movement": false,
+              "movement_cost": 1.5,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "ShallowPit",
+              "symbol": "u",
+              "tags": [],
+              "blocks_movement": false,
+              "movement_cost": 1.5,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "Pit",
+              "symbol": "U",
+              "tags": [],
+              "blocks_movement": true,
+              "movement_cost": 1,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "Pit",
+              "symbol": "U",
+              "tags": [],
+              "blocks_movement": true,
+              "movement_cost": 1,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "enclosed",
+                "solid",
+                "impassable",
+                "opaque"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ]
+    ],
+    "edges": [
+      {
+        "cells": [
+          [
+            12,
+            16
+          ],
+          [
+            11,
+            16
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            12,
+            17
+          ],
+          [
+            11,
+            17
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            11,
+            18
+          ],
+          [
+            12,
+            18
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            11,
+            19
+          ],
+          [
+            12,
+            19
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            11,
+            20
+          ],
+          [
+            12,
+            20
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            12,
+            21
+          ],
+          [
+            11,
+            21
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            12,
+            22
+          ],
+          [
+            11,
+            22
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            11,
+            23
+          ],
+          [
+            12,
+            23
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            11,
+            24
+          ],
+          [
+            12,
+            24
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            8,
+            25
+          ],
+          [
+            9,
+            25
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            8,
+            26
+          ],
+          [
+            9,
+            26
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            0,
+            26
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            1,
+            26
+          ],
+          [
+            1,
+            27
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            2,
+            26
+          ],
+          [
+            2,
+            27
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            3,
+            26
+          ],
+          [
+            3,
+            27
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            3,
+            7
+          ],
+          [
+            2,
+            7
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            6,
+            3
+          ],
+          [
+            7,
+            3
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            14,
+            19
+          ],
+          [
+            15,
+            19
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            13,
+            19
+          ],
+          [
+            14,
+            19
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            14,
+            19
+          ],
+          [
+            14,
+            20
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            14,
+            18
+          ],
+          [
+            14,
+            19
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            9,
+            23
+          ],
+          [
+            10,
+            23
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            10,
+            22
+          ],
+          [
+            10,
+            23
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            11,
+            23
+          ],
+          [
+            11,
+            22
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            9,
+            24
+          ],
+          [
+            10,
+            24
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            10,
+            24
+          ],
+          [
+            10,
+            25
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            11,
+            24
+          ],
+          [
+            11,
+            25
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            2,
+            27
+          ],
+          [
+            3,
+            27
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            2,
+            27
+          ],
+          [
+            1,
+            27
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            2,
+            27
+          ],
+          [
+            2,
+            28
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      }
+    ],
+    "reserved_positions": [],
+    "spawn_parameters": {
+      "top": {
+        "band_width": 4,
+        "window": {
+          "center": 8,
+          "spread": 2
+        }
+      },
+      "right": {
+        "band_width": 5,
+        "window": null
+      },
+      "bottom": {
+        "band_width": 4,
+        "window": null
+      },
+      "left": {
+        "band_width": 4,
+        "window": null
+      }
+    },
+    "placed_obstacles": []
+  },
+  "players": [
+    {
+      "player_id": 0,
+      "name": "Alice",
+      "faction": "rebels",
+      "side": 0,
+      "army": {
+        "faction": "rebels",
+        "units": [
+          {
+            "unit_id": 0,
+            "start_position": [
+              null,
+              null
+            ]
+          },
+          {
+            "unit_id": 1,
+            "start_position": [
+              0,
+              2
+            ]
+          },
+          {
+            "unit_id": 2,
+            "start_position": [
+              2,
+              5
+            ]
+          },
+          {
+            "unit_id": 3,
+            "start_position": [
+              2,
+              1
+            ]
+          },
+          {
+            "unit_id": 4,
+            "start_position": [
+              1,
+              1
+            ]
+          },
+          {
+            "unit_id": 5,
+            "start_position": [
+              2,
+              2
+            ]
+          },
+          {
+            "unit_id": 6,
+            "start_position": [
+              null,
+              null
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "player_id": 1,
+      "name": "Bob",
+      "faction": "imperials",
+      "side": 2,
+      "army": {
+        "faction": "imperials",
+        "units": [
+          {
+            "unit_id": 7,
+            "start_position": [
+              null,
+              null
+            ]
+          },
+          {
+            "unit_id": 8,
+            "start_position": [
+              null,
+              null
+            ]
+          },
+          {
+            "unit_id": 9,
+            "start_position": [
+              null,
+              null
+            ]
+          },
+          {
+            "unit_id": 10,
+            "start_position": [
+              null,
+              null
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "units": [
+    {
+      "unit_id": 0,
+      "owner_id": 0,
+      "name": "Sharpshooter",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 12,
+      "symbol": "RS",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 14,
+      "movement": 6,
+      "detection_range": 14,
+      "position": [
+        0,
+        2
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "sniper_rifle"
+      ],
+      "abilities": [
+        "steady_shot"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 1,
+      "owner_id": 0,
+      "name": "Sharpshooter",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 12,
+      "symbol": "RS",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 14,
+      "movement": 6,
+      "detection_range": 14,
+      "position": [
+        0,
+        2
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "sniper_rifle"
+      ],
+      "abilities": [
+        "steady_shot"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 2,
+      "owner_id": 0,
+      "name": "Sharpshooter",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 12,
+      "symbol": "RS",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 14,
+      "movement": 6,
+      "detection_range": 14,
+      "position": [
+        2,
+        5
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "sniper_rifle"
+      ],
+      "abilities": [
+        "steady_shot"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 3,
+      "owner_id": 0,
+      "name": "Rebel",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 6,
+      "symbol": "RT",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 20,
+      "current_health": 20,
+      "defense": 16,
+      "movement": 6,
+      "detection_range": 10,
+      "position": [
+        2,
+        1
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "blaster"
+      ],
+      "abilities": [
+        "stealth"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 4,
+      "owner_id": 0,
+      "name": "Rebel",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 6,
+      "symbol": "RT",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 20,
+      "current_health": 20,
+      "defense": 16,
+      "movement": 6,
+      "detection_range": 10,
+      "position": [
+        1,
+        1
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "blaster"
+      ],
+      "abilities": [
+        "stealth"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 5,
+      "owner_id": 0,
+      "name": "Rebel",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 6,
+      "symbol": "RT",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 20,
+      "current_health": 20,
+      "defense": 16,
+      "movement": 6,
+      "detection_range": 10,
+      "position": [
+        2,
+        2
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "blaster"
+      ],
+      "abilities": [
+        "stealth"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 6,
+      "owner_id": 0,
+      "name": "Rebel",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 6,
+      "symbol": "RT",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 20,
+      "current_health": 20,
+      "defense": 16,
+      "movement": 6,
+      "detection_range": 10,
+      "position": [
+        2,
+        17
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "blaster"
+      ],
+      "abilities": [
+        "stealth"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 1,
+      "owner_id": 0,
+      "name": "Sharpshooter",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 12,
+      "symbol": "RS",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 14,
+      "movement": 6,
+      "detection_range": 14,
+      "position": [
+        0,
+        2
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "sniper_rifle"
+      ],
+      "abilities": [
+        "steady_shot"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 2,
+      "owner_id": 0,
+      "name": "Sharpshooter",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 12,
+      "symbol": "RS",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 14,
+      "movement": 6,
+      "detection_range": 14,
+      "position": [
+        2,
+        5
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "sniper_rifle"
+      ],
+      "abilities": [
+        "steady_shot"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 3,
+      "owner_id": 0,
+      "name": "Rebel",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 6,
+      "symbol": "RT",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 20,
+      "current_health": 20,
+      "defense": 16,
+      "movement": 6,
+      "detection_range": 10,
+      "position": [
+        2,
+        1
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "blaster"
+      ],
+      "abilities": [
+        "stealth"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 4,
+      "owner_id": 0,
+      "name": "Rebel",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 6,
+      "symbol": "RT",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 20,
+      "current_health": 20,
+      "defense": 16,
+      "movement": 6,
+      "detection_range": 10,
+      "position": [
+        1,
+        1
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "blaster"
+      ],
+      "abilities": [
+        "stealth"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 5,
+      "owner_id": 0,
+      "name": "Rebel",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 6,
+      "symbol": "RT",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 20,
+      "current_health": 20,
+      "defense": 16,
+      "movement": 6,
+      "detection_range": 10,
+      "position": [
+        2,
+        2
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "blaster"
+      ],
+      "abilities": [
+        "stealth"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 0,
+      "owner_id": 0,
+      "name": "Sharpshooter",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 12,
+      "symbol": "RS",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 14,
+      "movement": 6,
+      "detection_range": 14,
+      "position": [
+        0,
+        2
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "sniper_rifle"
+      ],
+      "abilities": [
+        "steady_shot"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 6,
+      "owner_id": 0,
+      "name": "Rebel",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 6,
+      "symbol": "RT",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 20,
+      "current_health": 20,
+      "defense": 16,
+      "movement": 6,
+      "detection_range": 10,
+      "position": [
+        2,
+        17
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "blaster"
+      ],
+      "abilities": [
+        "stealth"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 7,
+      "owner_id": 1,
+      "name": "Brawler",
+      "faction": "Imperial",
+      "rarity": 1,
+      "cost": 5,
+      "symbol": "IB",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 2,
+        "length": 2
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 18,
+      "movement": 6,
+      "detection_range": 12,
+      "position": [
+        16,
+        21
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "blaster"
+      ],
+      "abilities": [],
+      "passive": []
+    },
+    {
+      "unit_id": 8,
+      "owner_id": 1,
+      "name": "Brawler",
+      "faction": "Imperial",
+      "rarity": 1,
+      "cost": 5,
+      "symbol": "IB",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 2,
+        "length": 2
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 18,
+      "movement": 6,
+      "detection_range": 12,
+      "position": [
+        15,
+        23
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "blaster"
+      ],
+      "abilities": [],
+      "passive": []
+    },
+    {
+      "unit_id": 9,
+      "owner_id": 1,
+      "name": "Sniper",
+      "faction": "Imperial",
+      "rarity": 1,
+      "cost": 9,
+      "symbol": "IS",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 16,
+      "movement": 5,
+      "detection_range": 12,
+      "position": [
+        18,
+        18
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "sniper_rifle"
+      ],
+      "abilities": [
+        "steady_shot"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 10,
+      "owner_id": 1,
+      "name": "Sniper",
+      "faction": "Imperial",
+      "rarity": 1,
+      "cost": 9,
+      "symbol": "IS",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 16,
+      "movement": 5,
+      "detection_range": 12,
+      "position": [
+        17,
+        8
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "sniper_rifle"
+      ],
+      "abilities": [
+        "steady_shot"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 7,
+      "owner_id": 1,
+      "name": "Brawler",
+      "faction": "Imperial",
+      "rarity": 1,
+      "cost": 5,
+      "symbol": "IB",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 2,
+        "length": 2
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 18,
+      "movement": 6,
+      "detection_range": 12,
+      "position": [
+        16,
+        21
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "blaster"
+      ],
+      "abilities": [],
+      "passive": []
+    },
+    {
+      "unit_id": 8,
+      "owner_id": 1,
+      "name": "Brawler",
+      "faction": "Imperial",
+      "rarity": 1,
+      "cost": 5,
+      "symbol": "IB",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 2,
+        "length": 2
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 18,
+      "movement": 6,
+      "detection_range": 12,
+      "position": [
+        15,
+        23
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "blaster"
+      ],
+      "abilities": [],
+      "passive": []
+    },
+    {
+      "unit_id": 9,
+      "owner_id": 1,
+      "name": "Sniper",
+      "faction": "Imperial",
+      "rarity": 1,
+      "cost": 9,
+      "symbol": "IS",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 16,
+      "movement": 5,
+      "detection_range": 12,
+      "position": [
+        18,
+        18
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "sniper_rifle"
+      ],
+      "abilities": [
+        "steady_shot"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 10,
+      "owner_id": 1,
+      "name": "Sniper",
+      "faction": "Imperial",
+      "rarity": 1,
+      "cost": 9,
+      "symbol": "IS",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 16,
+      "movement": 5,
+      "detection_range": 12,
+      "position": [
+        17,
+        8
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "sniper_rifle"
+      ],
+      "abilities": [
+        "steady_shot"
+      ],
+      "passive": []
+    }
+  ]
+}

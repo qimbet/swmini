@@ -29,6 +29,12 @@ def _serialize_position(position):
     if position is None:
         return None
 
+    if isinstance(position, dict):
+        return [
+            position["x"],
+            position["y"],
+        ]
+
     return list(position)
 
 
@@ -198,11 +204,8 @@ def serialize_player(player):
             "units": [
                 {
                     "unit_id": army_unit.unit.id,
-
-                    "start_position": (
-                        list(army_unit.start_position)
-                        if army_unit.start_position is not None
-                        else None
+                    "start_position": _serialize_position(
+                        army_unit.start_position
                     ),
                 }
 

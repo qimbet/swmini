@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 import json
+from src.utils.positions import normalize_position
 
 @dataclass
 class ArmyUnit:
@@ -38,7 +39,7 @@ class ArmyBuilder:
             positionList = entry["position"] #define number of units by placement
 
             for unit_position in positionList:
-
+                unit_position = normalize_position(unit_position)
                 unit = self.factory.create(
                     faction=data["faction"],
                     unit_type=unit_type,

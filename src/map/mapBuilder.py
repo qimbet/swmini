@@ -432,6 +432,53 @@ class GameMap:
 
 
 
+    @classmethod
+    def from_serialized(cls, data, rng=None):
+        """
+        Reconstruct a GameMap from serialized runtime state.
+
+        This does not run procedural map generation.
+        The serialized tiles and edges are treated as authoritative.
+        """
+
+        game_map = cls.__new__(cls)
+
+        game_map.rng = rng or random.Random()
+
+        game_map.width = data["width"]
+        game_map.height = data["height"]
+
+        game_map.spawn_parameters = data.get("spawn_parameters")
+        game_map.placed_obstacles = data.get("placed_obstacles", [])
+
+        game_map.reserved_positions = {
+            tuple(position)
+            for position in data.get("reserved_positions", [])
+        }
+
+        # Restore tiles.
+        game_map.tiles = [
+            [
+                deserialize_tile(tile_data)
+                for tile_data in row
+            ]
+            for row in data["tiles"]
+        ]
+
+        # Restore edges.
+        game_map.edges = {}
+
+        for edge_data in data.get("edges", []):
+            a = tuple(edge_data["cells"][0])
+            b = tuple(edge_data["cells"][1])
+
+            edge_type = EdgeType[edge_data["type"]]
+
+            game_map.edges[frozenset((a, b))] = Edge(edge_type)
+
+        return game_map
+
+
 
 if __name__ == "__main__":
     import argparse
