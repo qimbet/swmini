@@ -1,0 +1,51 @@
+Topics to study: 
+
+Architecture: 
+	Node2D
+	Control
+	Scene Instancing
+	Parent/Child relationships
+	Signals
+Input Events:
+	_input(event)
+	_unhandled_input(event)
+	InputEventMouseButton
+	InputEventMouseMotion
+	keyboard input
+	mouse-to-grid conversion
+Signals
+	...
+
+
+Keep the game render engine. Python gathers and passes tile contents to Godot: 
+	def get_tile_view_data(self,x,y)
+		...
+	returns: 
+		{"terrain": x, "unit": None, "occupied": False, "edges": {...}}
+		this is then handled by godot for display
+
+=================
+
+Suggested structure:
+GameScene
+	Board
+		Tile
+		Tile
+		...
+		Unit
+		Unit
+	UI
+		UnitPanel
+		TurnIndicator
+		ActionPanel
+	Camera2D
+
+Convert between (x,y) python coordinates and godot's pixel/world positioning
+	Build a conversion layer: 
+	(x,y) <--> Vector2(xx, yy)
+
+
+GameEngine handles movement, turn management, permissions. 
+
+Build an API layer over Game to standardize how it interfaces with Godot
+

@@ -1,7 +1,5 @@
 from enum import Enum, auto
 
-
-
 WALL_TYPES = {
     "vertical": {
         "step": (0, 1),

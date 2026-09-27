@@ -5,16 +5,14 @@ class Player:
         faction,
         path_to_army,
         side,
+        player_id=None,
     ):
-
+        self.id = player_id
         self.name = name
         self.faction = faction
         self.army = None
         self.path_to_army = path_to_army
         self.side = side
-
-        # Runtime state
-        self.units = []
 
     def assign_army(self, army):
         self.army=army
@@ -33,6 +31,7 @@ class Player:
     def __repr__(self):
         return (
             f"Player("
+            f"id={self.id}, "
             f"name={self.name}, "
             f"faction={self.faction}, "
             f"side={self.side}"

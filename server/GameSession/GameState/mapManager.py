@@ -32,9 +32,7 @@ class MapManager:
     def load_map(self, map_file):
         with open(map_file) as f:
             map_context = json.load(f)
-
         #instantiate reserved_positions here
-
 
         self.map = GameMap(map_context, rng=self.rng)
 
@@ -61,22 +59,11 @@ class MapManager:
         self.turn_number += 1
 
     def can_place(self, position, unitToPlace=None, obstacle_types=("solid",), return_reason=False):
-        #updateflag: obstacle_types should be a unit property
-#        print(f"""mapmanager/can_place
-#            position: {position}
-#            mapwidth: {self.map.width}
-#            mapheight: {self.map.height}
-#        """)
-
-        
         if unitToPlace is None:
             positions =  [position]
         else: 
             positions = unitToPlace.occupied_positions(position)
         for x, y in positions:
-            #x, y = position
-            #x = position.get("x")
-            #y = position.get("y")
             if not (
                 0 <= x < self.map.width and
                 0 <= y < self.map.height
@@ -124,7 +111,6 @@ class MapManager:
             if position in unit.occupied_positions():
                 #print(f"Occupying unit: \n{unit}")
                 return unit
-
         return None
 
     def get_fixed_army_positions(self):
@@ -132,12 +118,9 @@ class MapManager:
 
         for player in self.players:
             for army_unit in player.army.units:
-
                 position = army_unit.start_position
-
                 if position is None:
                     continue
-
                 x = position.get("x")
                 y = position.get("y")
 

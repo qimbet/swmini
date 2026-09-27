@@ -2,6 +2,8 @@ import random
 from pathlib import Path
 from src.game.config import UNITS, MAPS_DIR
 
+from server.api.game_api import GameAPI
+
 from src.classes.army import ArmyBuilder
 from src.classes.players import Player
 from src.classes.unit_instantiator import UnitInstantiator
@@ -20,17 +22,18 @@ def get_all_units(units_directory=UNITS):
 
 class Game:
     def __init__(self, seed=None, map_file=None, unit_files=None, players=None):
-        seed = seed if seed is not None else random.randint(0, 2**32 -1)
+        self.seed = seed if seed is not None else random.randint(0, 2**32 -1)
 
-        self.rng = random.Random(seed)
+
+        self.rng = random.Random(self.seed)
         self.factory = UnitInstantiator(unit_files or get_all_units())
         self.army_builder = ArmyBuilder(self.factory) #army: [(unit, position), (...)]
         self.map_manager = MapManager(rng=self.rng)
 
-        self.players = players or []
-        if self.players:
-            self.map_manager.active_player = self.players[0]
-
+        self.players = []
+        self._next_player_id = 0
+        for player in players or []:
+            self.add_player(player)
 
         if not map_file: #choose random map from dir if not specified
             maps = list(Path (MAPS_DIR).glob("*.json"))
@@ -40,11 +43,27 @@ class Game:
 
         self.running = False
 
+    def _get_next_player_id(self):
+        player_id = self._next_player_id
+        self._next_player_id +=1 
+        return player_id
+
+    def add_player(self, player):
+        if player.id is not None:
+            raise ValueError(f"Player already has an ID: {player.id}")
+
+        player.id = self._get_next_player_id()
+        self.players.append(player)
+        self.map_manager.add_player(player)
+
+        if self.map_manager.active_player is None:
+            self.map_manager.active_player = player
+
     def setup(self):
         self.map_manager.load_map(self.map_file)
 
         for player in self.players:
-            self.map_manager.add_player(player)
+#            self.map_manager.add_player(player)
             player.army = self.army_builder.load_army(player.path_to_army, owner=player)
 
             self.map_manager.load_army(player)
@@ -56,8 +75,8 @@ class Game:
     def setup_map(self, map_file):
         self.map_manager.load_map(map_file)
 
-    def add_player(self, player):
-        self.map_manager.add_player(player)
+#    def add_player(self, player):
+#        self.map_manager.add_player(player)
 
     def load_players(self, player_configs):
         for config in player_configs:

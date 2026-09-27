@@ -31,7 +31,10 @@ class Unit:
             symbol=None,
             fullArt_path=None,
             icon_path=None,
+            unit_id=None,
         ):
+
+        self.id = unit_id
 
         self.cost = cost
         self.faction = faction
@@ -56,6 +59,9 @@ class Unit:
         self.attacks = attacks or [] #can append to this list to 'equip'
         self.abilities = abilities or []
         self.passive = passive or []
+
+        self.status_efffects = []
+        self.cooldowns = {} 
 
     
     def occupied_positions(self, position=None):

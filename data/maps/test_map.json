@@ -1,5 +1,5 @@
 {
-    "base" : {"width": 16, "height": 20},
+    "base" : {"width": 20, "height": 30},
     "spawn_parameters": {
         "top": {
             "band_width": 4,
@@ -29,6 +29,10 @@
                     "length":6,
                     "position":[2,2]
                 }, 
+                {
+                    "length":9,
+                    "position":null
+                },
                 {
                     "length":2,
                     "position":null
