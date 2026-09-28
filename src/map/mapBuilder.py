@@ -40,7 +40,7 @@ WALL_EDGE_TYPE = {
 
 class GameMap:
     def __init__(self, mapContext, rng=None, max_attempts=5, reserved_positions=None):
-        self.rng = rng if rng else random.Random(rng) 
+        self.rng = rng if rng is not None else random.Random(rng) 
 
         mapSize = mapContext.get("base")
         if mapSize is None:
@@ -80,7 +80,7 @@ class GameMap:
                 break
             except(ValueError, RuntimeError) as error:
                 print(f"Map generation failed! failure: {retryCount}/{max_attempts}\nERROR: {error}")
-                if retryCount > max_attempts:
+                if retryCount == max_attempts:
                     raise RuntimeError(
                         f"Could not build a valid map after {max_attempts} tries"
                     ) from error
@@ -89,6 +89,39 @@ class GameMap:
 
     def _is_solid(self, x, y):
         return any("solid" in f.tags for f in self.tiles[y][x].features)
+
+    def _wall_can_fit(self, x0, y0, length, step_x, step_y, edge_x, edge_y):
+        """
+        Return True if a wall can be placed without intersecting
+        solid/occupied tiles.
+
+        A wall is represented by edges between two cells. For each
+        wall segment, both endpoint cells must be valid and neither
+        may contain a solid obstacle.
+
+        This prevents randomly-generated walls from bisecting
+        solid terrain.
+        """
+
+        if not self._wall_fits(x0, y0, length, step_x, step_y):
+            return False
+
+        for i in range(length):
+            x = x0 + i * step_x
+            y = y0 + i * step_y
+
+            a = (x,y)
+            b = (x+edge_x, y+edge_y)
+
+            # The wall segment runs from (x, y) to this adjacent cell.
+            #nx = x + edge_x
+            #ny = y + edge_y
+
+            # An edge may legitimately lie on the outer map boundary.
+            if not self._wall_can_be_placed_between(a, b):
+                return False
+
+        return True
 
     def _wall_fits(self, x0, y0, length, step_x, step_y):
         x1 = x0 + step_x * (length - 1)
@@ -100,6 +133,29 @@ class GameMap:
             0 <= x1 < self.width and
             0 <= y1 < self.height
         )
+
+    def _wall_can_be_placed_between(self, a, b):
+        ax, ay = a
+        bx, by = b
+
+        # Random walls cannot lie on the outer map boundary.
+        if not (
+            0 <= ax < self.width
+            and 0 <= ay < self.height
+            and 0 <= bx < self.width
+            and 0 <= by < self.height
+        ):
+            return False
+
+        if self._is_solid(ax, ay):
+            return False
+        if self._is_solid(bx, by):
+            return False
+
+        if self.get_edge(a, b) is not None:
+            return False
+
+        return True
 
     def _place_area(self, feature_cls, x0, y0, w, h):
         for y in range(y0, y0 + h):
@@ -227,13 +283,24 @@ class GameMap:
             for wall in walls:
                 if wall["position"] is not None:
                     continue
+
                 length = wall["length"]
+
+                placed = False
 
                 for _ in range(attempts):
                     x0 = self.rng.randint(0, self.width - 1)
                     y0 = self.rng.randint(0, self.height - 1)
 
-                    if not self._wall_fits(x0, y0, length, step_x, step_y):
+                    if not self._wall_can_fit(
+                        x0,
+                        y0,
+                        length,
+                        step_x,
+                        step_y,
+                        edge_x,
+                        edge_y,
+                    ):
                         continue
 
                     candidate_edges = []
@@ -245,31 +312,26 @@ class GameMap:
                         a = (x, y)
                         b = (x + edge_x, y + edge_y)
 
-                        candidate_edges.append(
-                            (a, b, edge_type)
-                        )
+                        candidate_edges.append((a, b, edge_type))
 
-                    # Temporarily add the wall.
+                    # Add candidate.
                     for a, b, edge_type in candidate_edges:
                         self.add_wall(a, b, edge_type)
 
-                    # Reject it if it divides the walkable map.
+                    # Candidate is valid only if connectivity survives.
                     if self.is_connected():
+                        placed = True
                         break
-                    else:
-                        for a, b, _ in candidate_edges:
-                            self.edges.pop(frozenset((a, b)), None)
 
+                    # Roll back candidate.
+                    for a, b, _ in candidate_edges:
+                        self.edges.pop(frozenset((a, b)), None)
+
+                if not placed:
                     raise RuntimeError(
                         f"Could not place non-dividing random wall "
                         f"orientation='{orientation}', length={length}"
                     )
-                else:
-                    raise RuntimeError(
-                        f"Could not place non-dividing " 
-                        f"random wall " 
-                        f"orientation='{orientation}', " 
-                        f"length={length}")
 
     def _obstacle_can_fit(self, x0, y0, w, h):
         if x0 < 0 or y0 < 0:
@@ -283,10 +345,15 @@ class GameMap:
 
         for y in range(y0, y0 + h):
             for x in range(x0, x0 + w):
-                #check if another obstacle already occupies tile
-                if self.tiles[y][x].features:
-                    print("Tile already occupied")
+
+                # Never place an obstacle on a reserved deployment tile.
+                if (x, y) in self.reserved_positions:
                     return False
+
+                # Never overlap another feature.
+                if self.tiles[y][x].features:
+                    return False
+
         return True
 
     def _walkable(self, x, y):
@@ -365,15 +432,13 @@ class GameMap:
         obstaclesData = mapContextData.get("obstacles", {})
         wallsData = mapContextData.get("walls", {})
 
-        self._place_random_walls(wallsData)
+        self._place_fixed_obstacles(obstaclesData)
         self._place_random_obstacles(obstaclesData)
 
         self._place_fixed_walls(wallsData)
-        self._place_fixed_obstacles(obstaclesData)
+        self._place_random_walls(wallsData)
 
         self._build_obstacle_enclosures()
-
-
 
 
     def display(self, symbol_provider=None, show_coordinates=True):
@@ -384,11 +449,12 @@ class GameMap:
             self._display_column_labels(cell_width, index_width)
 
         prefix = " " * index_width if show_coordinates else ""
+
+        # Top boundary
         print(prefix + "+" + "---+" * self.width)
 
         for y in range(self.height):
             row_label = f"{y + 1:>3} " if show_coordinates else ""
-
             row = row_label + "|"
 
             for x in range(self.width):
@@ -397,47 +463,62 @@ class GameMap:
                 else:
                     symbol = self.tiles[y][x].symbol()
 
-                row += f"{symbol:<3}" #aw :)
+                row += f"{symbol:<3}"
 
                 if x < self.width - 1:
-                    edge = self.get_edge(
-                        (x, y),
-                        (x + 1, y)
-                    )
-                    row += "|" if edge else " "
+                    a = (x, y)
+                    b = (x + 1, y)
+
+                    edge = self.get_edge(a, b)
+
+                    if edge and not (
+                        self._is_solid(*a)
+                        and self._is_solid(*b)
+                    ):
+                        row += "|"
+                    else:
+                        row += " "
                 else:
+                    # Always show the right-hand map boundary.
                     row += "|"
 
             print(row)
 
-            # Horizontal border 
-            border_prefix = ( 
-                " " * index_width if show_coordinates 
-                else "" 
-            ) 
+            # Horizontal boundary below this row
+            border_prefix = (
+                " " * index_width
+                if show_coordinates
+                else ""
+            )
 
             border = border_prefix + "+"
 
             for x in range(self.width):
                 if y < self.height - 1:
-                    edge = self.get_edge(
-                        (x, y),
-                        (x, y + 1)
-                    )
+                    a = (x, y)
+                    b = (x, y + 1)
 
-                    border += "---+" if edge else "   +"
+                    edge = self.get_edge(a, b)
+
+                    if edge and not (
+                        self._is_solid(*a)
+                        and self._is_solid(*b)
+                    ):
+                        border += "---+"
+                    else:
+                        border += "   +"
                 else:
+                    # Always show the bottom map boundary.
                     border += "---+"
 
             print(border)
-
 
     def _display_column_labels(self, cell_width=3, index_width=4):
         label = " " * index_width
 
         for x in range(self.width):
             cell_id = position_to_cell((x, 0))
-            label += f"{cell_id[0]:^{cell_width}} "
+            label += f"{cell_id[0]:^{cell_width +1 }} "
 
         if x < self.width - 1: 
             label += " "
@@ -464,55 +545,6 @@ class GameMap:
 
         with open(path, "w") as f:
             json.dump(data, f, indent=2)
-
-
-
-    @classmethod
-    def from_serialized(cls, data, rng=None):
-        """
-        Reconstruct a GameMap from serialized runtime state.
-
-        This does not run procedural map generation.
-        The serialized tiles and edges are treated as authoritative.
-        """
-
-        game_map = cls.__new__(cls)
-
-        game_map.rng = rng or random.Random()
-
-        game_map.width = data["width"]
-        game_map.height = data["height"]
-
-        game_map.spawn_parameters = data.get("spawn_parameters")
-        game_map.placed_obstacles = data.get("placed_obstacles", [])
-
-        game_map.reserved_positions = {
-            tuple(position)
-            for position in data.get("reserved_positions", [])
-        }
-
-        # Restore tiles.
-        game_map.tiles = [
-            [
-                deserialize_tile(tile_data)
-                for tile_data in row
-            ]
-            for row in data["tiles"]
-        ]
-
-        # Restore edges.
-        game_map.edges = {}
-
-        for edge_data in data.get("edges", []):
-            a = tuple(edge_data["cells"][0])
-            b = tuple(edge_data["cells"][1])
-
-            edge_type = EdgeType[edge_data["type"]]
-
-            game_map.edges[frozenset((a, b))] = Edge(edge_type)
-
-        return game_map
-
 
 
 if __name__ == "__main__":

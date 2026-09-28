@@ -59,36 +59,35 @@ class MapManager:
         self.turn_number += 1
 
     def can_place(self, position, unitToPlace=None, obstacle_types=("solid",), return_reason=False):
-        if unitToPlace is None:
-            positions =  [position]
-        else: 
-            positions = unitToPlace.occupied_positions(position)
+        positions = (
+            [position]
+            if unitToPlace is None
+            else unitToPlace.occupied_positions(position)
+        )
+
         for x, y in positions:
-            if not (
-                0 <= x < self.map.width and
-                0 <= y < self.map.height
-            ):
-                reason = f"position {(x, y)} is outside the map bounds ({self.map.width}x{self.map.height})" 
-                if return_reason: 
-                    return False, reason
+            if not (0 <= x < self.map.width and 0 <= y < self.map.height):
+                reason = (
+                    f"position {(x, y)} is outside the map bounds "
+                    f"({self.map.width}x{self.map.height})"
+                )
+                return (False, reason) if return_reason else False
 
             tile = self.map.tiles[y][x]
 
             for feature in tile.features:
-                if any(
-                    tag in feature.tags
-                    for tag in obstacle_types
-                ):
-                    reason = f"Cannot place unit on impassable terrain!\n {feature.__class__.__name__}"
-                    if return_reason:
-                        return False, reason
-                    return False, ""
+                if any(tag in feature.tags for tag in obstacle_types):
+                    reason = (
+                        "Cannot place unit on impassable terrain!\n"
+                        f"{feature.__class__.__name__}"
+                    )
+                    return (False, reason) if return_reason else False
 
-            if self.get_unit_at(position, excludeUnit=unitToPlace):
-                print("Cannot place unit in an occupied tile!")
-                return False, ""
+            if self.get_unit_at((x, y), excludeUnit=unitToPlace):
+                reason = f"Position {(x, y)} is occupied by another unit."
+                return (False, reason) if return_reason else False
 
-        return True, ""
+        return (True, "") if return_reason else True
 
     def build_map_symbol(self, x, y): #Renders symbol for a tile; combines terrain + units
         tile = self.map.tiles[y][x]

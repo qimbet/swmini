@@ -41,11 +41,12 @@ def export_game_state(game, path):
         )
     print(f"Game state exported to: {path}")
 
-def main(seed, outputPath='debug_game_state.json'):
+def main(seed, serialize=False, outputPath='debug_game_state.json'):
     print("Beginning test game")
     game = create_debug_game(seed=seed)
     game.start()
-    export_game_state(game, outputPath)
+    if serialize: 
+        export_game_state(game, outputPath)
 
 
 if __name__ == "__main__":
@@ -56,6 +57,6 @@ if __name__ == "__main__":
 
     seed = args.seed if args.seed is not None else random.randint(0, 2**32 -1)
 
-    main(seed=seed, outputPath=args.output)
+    main(seed=seed, serialize=False, outputPath=args.output)
 
 

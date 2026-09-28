@@ -28,10 +28,9 @@ class DeploymentManager:
                 continue
 
             position = (x, y)
-            can_place, reason = self.map_manager.can_place(
+            can_place = self.map_manager.can_place(
                 position,
                 unitToPlace=unit,
-                return_reason=True,
             )
 
             if not can_place:
@@ -43,7 +42,7 @@ class DeploymentManager:
 
                 raise RuntimeError(
                     f"Could not place fixed unit '{unit_name}' "
-                    f"at {position}: {reason}"
+                    f"at {position}"
                 )
 
             unit.position = position
