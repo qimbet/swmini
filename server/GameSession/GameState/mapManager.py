@@ -131,6 +131,16 @@ class MapManager:
 
         return positions
 
+    def in_bounds(self, position):
+        x, y = position
+        return (
+            0 <= x < self.map.width
+            and 0 <= y < self.map.height
+        )
+
+    def get_tile(self, position):
+        x, y = position
+        return self.map.tiles[y][x]
     # ---------------------------
     # Serialization
     # ---------------------------

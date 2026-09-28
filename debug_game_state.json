@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "seed": 4256508273,
+  "seed": 2774133945,
   "turn_number": 1,
   "active_player_id": 0,
   "running": true,
   "map": {
-    "width": 20,
-    "height": 30,
+    "width": 12,
+    "height": 16,
     "tiles": [
       [
         {
@@ -46,1598 +46,13 @@
           "no_stop": false
         },
         {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "LightCover",
-              "symbol": "-",
-              "tags": [
-                "cover"
-              ],
-              "blocks_movement": false,
-              "movement_cost": 1,
-              "cover_value": 1,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "LightCover",
-              "symbol": "-",
-              "tags": [
-                "cover"
-              ],
-              "blocks_movement": false,
-              "movement_cost": 1,
-              "cover_value": 1,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "LightCover",
-              "symbol": "-",
-              "tags": [
-                "cover"
-              ],
-              "blocks_movement": false,
-              "movement_cost": 1,
-              "cover_value": 1,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "LightCover",
-              "symbol": "-",
-              "tags": [
-                "cover"
-              ],
-              "blocks_movement": false,
-              "movement_cost": 1,
-              "cover_value": 1,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "LightCover",
-              "symbol": "-",
-              "tags": [
-                "cover"
-              ],
-              "blocks_movement": false,
-              "movement_cost": 1,
-              "cover_value": 1,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "LightCover",
-              "symbol": "-",
-              "tags": [
-                "cover"
-              ],
-              "blocks_movement": false,
-              "movement_cost": 1,
-              "cover_value": 1,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
           "features": [
             {
               "type": "DenseCover",
               "symbol": "=",
               "tags": [
-                "cover",
-                "obstruction"
-              ],
-              "blocks_movement": false,
-              "movement_cost": 1,
-              "cover_value": 2,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "LightCover",
-              "symbol": "-",
-              "tags": [
+                "obstruction",
                 "cover"
-              ],
-              "blocks_movement": false,
-              "movement_cost": 1,
-              "cover_value": 1,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "LightCover",
-              "symbol": "-",
-              "tags": [
-                "cover"
-              ],
-              "blocks_movement": false,
-              "movement_cost": 1,
-              "cover_value": 1,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "DenseCover",
-              "symbol": "=",
-              "tags": [
-                "cover",
-                "obstruction"
               ],
               "blocks_movement": false,
               "movement_cost": 1,
@@ -1653,8 +68,8 @@
               "type": "DenseCover",
               "symbol": "=",
               "tags": [
-                "cover",
-                "obstruction"
+                "obstruction",
+                "cover"
               ],
               "blocks_movement": false,
               "movement_cost": 1,
@@ -1670,8 +85,8 @@
               "type": "DenseCover",
               "symbol": "=",
               "tags": [
-                "cover",
-                "obstruction"
+                "obstruction",
+                "cover"
               ],
               "blocks_movement": false,
               "movement_cost": 1,
@@ -1680,19 +95,9 @@
             }
           ],
           "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
+        }
+      ],
+      [
         {
           "features": [],
           "no_stop": false
@@ -1756,7 +161,105 @@
           "no_stop": false
         },
         {
-          "features": [],
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "opaque",
+                "enclosed",
+                "impassable",
+                "solid"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "opaque",
+                "enclosed",
+                "impassable",
+                "solid"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "opaque",
+                "enclosed",
+                "impassable",
+                "solid"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "ShallowPit",
+              "symbol": "u",
+              "tags": [],
+              "blocks_movement": false,
+              "movement_cost": 1.5,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "ShallowPit",
+              "symbol": "u",
+              "tags": [],
+              "blocks_movement": false,
+              "movement_cost": 1.5,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "ShallowPit",
+              "symbol": "u",
+              "tags": [],
+              "blocks_movement": false,
+              "movement_cost": 1.5,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
           "no_stop": false
         },
         {
@@ -1770,7 +273,9 @@
         {
           "features": [],
           "no_stop": false
-        },
+        }
+      ],
+      [
         {
           "features": [],
           "no_stop": false
@@ -1784,7 +289,43 @@
           "no_stop": false
         },
         {
-          "features": [],
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "opaque",
+                "enclosed",
+                "impassable",
+                "solid"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "opaque",
+                "enclosed",
+                "impassable",
+                "solid"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
           "no_stop": false
         },
         {
@@ -1792,23 +333,45 @@
           "no_stop": false
         },
         {
-          "features": [],
+          "features": [
+            {
+              "type": "ShallowPit",
+              "symbol": "u",
+              "tags": [],
+              "blocks_movement": false,
+              "movement_cost": 1.5,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
           "no_stop": false
         },
         {
-          "features": [],
+          "features": [
+            {
+              "type": "ShallowPit",
+              "symbol": "u",
+              "tags": [],
+              "blocks_movement": false,
+              "movement_cost": 1.5,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
           "no_stop": false
         },
         {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
+          "features": [
+            {
+              "type": "ShallowPit",
+              "symbol": "u",
+              "tags": [],
+              "blocks_movement": false,
+              "movement_cost": 1.5,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
           "no_stop": false
         },
         {
@@ -1838,7 +401,43 @@
           "no_stop": false
         },
         {
-          "features": [],
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "opaque",
+                "enclosed",
+                "impassable",
+                "solid"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "opaque",
+                "enclosed",
+                "impassable",
+                "solid"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
           "no_stop": false
         },
         {
@@ -1854,47 +453,35 @@
           "no_stop": false
         },
         {
-          "features": [],
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
           "no_stop": false
         },
         {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
           "no_stop": false
         },
         {
@@ -1913,6 +500,132 @@
         },
         {
           "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "opaque",
+                "enclosed",
+                "impassable",
+                "solid"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "SolidObstacle",
+              "symbol": "#",
+              "tags": [
+                "opaque",
+                "enclosed",
+                "impassable",
+                "solid"
+              ],
+              "blocks_movement": true,
+              "movement_cost": null,
+              "cover_value": 0,
+              "height": 0,
+              "blocks_vision": true
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [
+            {
+              "type": "Pit",
+              "symbol": "U",
+              "tags": [],
+              "blocks_movement": true,
+              "movement_cost": 1,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "Pit",
+              "symbol": "U",
+              "tags": [],
+              "blocks_movement": true,
+              "movement_cost": 1,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
           "no_stop": false
         },
         {
@@ -1942,6 +655,48 @@
         {
           "features": [
             {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [
+            {
               "type": "Pit",
               "symbol": "U",
               "tags": [],
@@ -1965,6 +720,270 @@
               "height": 0
             }
           ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "LightCover",
+              "symbol": "-",
+              "tags": [
+                "cover"
+              ],
+              "blocks_movement": false,
+              "movement_cost": 1,
+              "cover_value": 1,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [
+            {
+              "type": "Pit",
+              "symbol": "U",
+              "tags": [],
+              "blocks_movement": true,
+              "movement_cost": 1,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "Pit",
+              "symbol": "U",
+              "tags": [],
+              "blocks_movement": true,
+              "movement_cost": 1,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [
+            {
+              "type": "Pit",
+              "symbol": "U",
+              "tags": [],
+              "blocks_movement": true,
+              "movement_cost": 1,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [
+            {
+              "type": "Pit",
+              "symbol": "U",
+              "tags": [],
+              "blocks_movement": true,
+              "movement_cost": 1,
+              "cover_value": 0,
+              "height": 0
+            }
+          ],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
+          "no_stop": false
+        }
+      ],
+      [
+        {
+          "features": [],
+          "no_stop": false
+        },
+        {
+          "features": [],
           "no_stop": false
         },
         {
@@ -1989,10 +1008,10 @@
               "type": "SolidObstacle",
               "symbol": "#",
               "tags": [
+                "opaque",
                 "enclosed",
-                "solid",
                 "impassable",
-                "opaque"
+                "solid"
               ],
               "blocks_movement": true,
               "movement_cost": null,
@@ -2058,58 +1077,6 @@
           "no_stop": false
         },
         {
-          "features": [
-            {
-              "type": "Pit",
-              "symbol": "U",
-              "tags": [],
-              "blocks_movement": true,
-              "movement_cost": 1,
-              "cover_value": 0,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "Pit",
-              "symbol": "U",
-              "tags": [],
-              "blocks_movement": true,
-              "movement_cost": 1,
-              "cover_value": 0,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
           "features": [],
           "no_stop": false
         },
@@ -2127,530 +1094,6 @@
         }
       ],
       [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "ShallowPit",
-              "symbol": "u",
-              "tags": [],
-              "blocks_movement": false,
-              "movement_cost": 1.5,
-              "cover_value": 0,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "ShallowPit",
-              "symbol": "u",
-              "tags": [],
-              "blocks_movement": false,
-              "movement_cost": 1.5,
-              "cover_value": 0,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "ShallowPit",
-              "symbol": "u",
-              "tags": [],
-              "blocks_movement": false,
-              "movement_cost": 1.5,
-              "cover_value": 0,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "Pit",
-              "symbol": "U",
-              "tags": [],
-              "blocks_movement": true,
-              "movement_cost": 1,
-              "cover_value": 0,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "Pit",
-              "symbol": "U",
-              "tags": [],
-              "blocks_movement": true,
-              "movement_cost": 1,
-              "cover_value": 0,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "ShallowPit",
-              "symbol": "u",
-              "tags": [],
-              "blocks_movement": false,
-              "movement_cost": 1.5,
-              "cover_value": 0,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "ShallowPit",
-              "symbol": "u",
-              "tags": [],
-              "blocks_movement": false,
-              "movement_cost": 1.5,
-              "cover_value": 0,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "ShallowPit",
-              "symbol": "u",
-              "tags": [],
-              "blocks_movement": false,
-              "movement_cost": 1.5,
-              "cover_value": 0,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "Pit",
-              "symbol": "U",
-              "tags": [],
-              "blocks_movement": true,
-              "movement_cost": 1,
-              "cover_value": 0,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "Pit",
-              "symbol": "U",
-              "tags": [],
-              "blocks_movement": true,
-              "movement_cost": 1,
-              "cover_value": 0,
-              "height": 0
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
         {
           "features": [],
           "no_stop": false
@@ -2748,253 +1191,9 @@
         {
           "features": [],
           "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
         }
       ],
       [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [
-            {
-              "type": "SolidObstacle",
-              "symbol": "#",
-              "tags": [
-                "enclosed",
-                "solid",
-                "impassable",
-                "opaque"
-              ],
-              "blocks_movement": true,
-              "movement_cost": null,
-              "cover_value": 0,
-              "height": 0,
-              "blocks_vision": true
-            }
-          ],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        }
-      ],
-      [
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
-        {
-          "features": [],
-          "no_stop": false
-        },
         {
           "features": [],
           "no_stop": false
@@ -3049,11 +1248,86 @@
       {
         "cells": [
           [
-            12,
+            6,
+            3
+          ],
+          [
+            7,
+            3
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            7,
+            4
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            7,
+            5
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            4,
+            15
+          ],
+          [
+            4,
             16
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            5,
+            15
           ],
           [
-            11,
+            5,
             16
           ]
         ],
@@ -3064,12 +1338,12 @@
       {
         "cells": [
           [
-            12,
-            17
+            6,
+            15
           ],
           [
-            11,
-            17
+            6,
+            16
           ]
         ],
         "type": "BASIS_WALL",
@@ -3079,12 +1353,12 @@
       {
         "cells": [
           [
-            11,
-            18
+            7,
+            15
           ],
           [
-            12,
-            18
+            7,
+            16
           ]
         ],
         "type": "BASIS_WALL",
@@ -3094,192 +1368,12 @@
       {
         "cells": [
           [
-            11,
-            19
-          ],
-          [
-            12,
-            19
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            11,
-            20
-          ],
-          [
-            12,
-            20
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            12,
-            21
-          ],
-          [
-            11,
-            21
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            12,
-            22
-          ],
-          [
-            11,
-            22
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            11,
-            23
-          ],
-          [
-            12,
-            23
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            11,
-            24
-          ],
-          [
-            12,
-            24
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            8,
-            25
-          ],
-          [
-            9,
-            25
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            8,
-            26
-          ],
-          [
-            9,
-            26
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            0,
-            26
-          ],
-          [
-            0,
-            27
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            1,
-            26
-          ],
-          [
-            1,
-            27
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            2,
-            26
-          ],
-          [
-            2,
-            27
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            3,
-            26
-          ],
-          [
-            3,
-            27
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            0,
-            8
-          ],
-          [
-            0,
+            7,
             9
+          ],
+          [
+            7,
+            8
           ]
         ],
         "type": "BASIS_WALL",
@@ -3289,11 +1383,11 @@
       {
         "cells": [
           [
-            1,
+            8,
             8
           ],
           [
-            1,
+            8,
             9
           ]
         ],
@@ -3424,6 +1518,36 @@
       {
         "cells": [
           [
+            6,
+            2
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "type": "BASIS_WALL",
+        "blocks_movement": true,
+        "diagonal": false
+      },
+      {
+        "cells": [
+          [
             5,
             1
           ],
@@ -3439,72 +1563,12 @@
       {
         "cells": [
           [
-            6,
-            2
-          ],
-          [
-            7,
-            2
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            6,
-            1
-          ],
-          [
-            6,
-            2
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
             5,
             3
           ],
           [
-            5,
-            4
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            6,
+            4,
             3
-          ],
-          [
-            7,
-            3
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            6,
-            3
-          ],
-          [
-            6,
-            4
           ]
         ],
         "type": "BASIS_WALL",
@@ -3574,12 +1638,12 @@
       {
         "cells": [
           [
-            14,
-            19
+            7,
+            11
           ],
           [
-            15,
-            19
+            6,
+            11
           ]
         ],
         "type": "BASIS_WALL",
@@ -3589,12 +1653,12 @@
       {
         "cells": [
           [
-            13,
-            19
+            5,
+            11
           ],
           [
-            14,
-            19
+            6,
+            11
           ]
         ],
         "type": "BASIS_WALL",
@@ -3604,12 +1668,12 @@
       {
         "cells": [
           [
-            14,
-            19
+            6,
+            12
           ],
           [
-            14,
-            20
+            6,
+            11
           ]
         ],
         "type": "BASIS_WALL",
@@ -3619,147 +1683,12 @@
       {
         "cells": [
           [
-            14,
-            18
+            6,
+            10
           ],
           [
-            14,
-            19
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            9,
-            23
-          ],
-          [
-            10,
-            23
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            10,
-            22
-          ],
-          [
-            10,
-            23
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            11,
-            23
-          ],
-          [
-            11,
-            22
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            9,
-            24
-          ],
-          [
-            10,
-            24
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            10,
-            24
-          ],
-          [
-            10,
-            25
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            11,
-            24
-          ],
-          [
-            11,
-            25
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            2,
-            27
-          ],
-          [
-            3,
-            27
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            2,
-            27
-          ],
-          [
-            1,
-            27
-          ]
-        ],
-        "type": "BASIS_WALL",
-        "blocks_movement": true,
-        "diagonal": false
-      },
-      {
-        "cells": [
-          [
-            2,
-            27
-          ],
-          [
-            2,
-            28
+            6,
+            11
           ]
         ],
         "type": "BASIS_WALL",
@@ -3810,40 +1739,26 @@
           {
             "unit_id": 1,
             "start_position": [
-              0,
-              2
+              2,
+              5
             ]
           },
           {
             "unit_id": 2,
             "start_position": [
               2,
-              5
+              1
             ]
           },
           {
             "unit_id": 3,
             "start_position": [
               2,
-              1
-            ]
-          },
-          {
-            "unit_id": 4,
-            "start_position": [
-              1,
-              1
-            ]
-          },
-          {
-            "unit_id": 5,
-            "start_position": [
-              2,
               2
             ]
           },
           {
-            "unit_id": 6,
+            "unit_id": 4,
             "start_position": [
               null,
               null
@@ -3861,28 +1776,21 @@
         "faction": "imperials",
         "units": [
           {
+            "unit_id": 5,
+            "start_position": [
+              null,
+              null
+            ]
+          },
+          {
+            "unit_id": 6,
+            "start_position": [
+              null,
+              null
+            ]
+          },
+          {
             "unit_id": 7,
-            "start_position": [
-              null,
-              null
-            ]
-          },
-          {
-            "unit_id": 8,
-            "start_position": [
-              null,
-              null
-            ]
-          },
-          {
-            "unit_id": 9,
-            "start_position": [
-              null,
-              null
-            ]
-          },
-          {
-            "unit_id": 10,
             "start_position": [
               null,
               null
@@ -3913,8 +1821,8 @@
       "movement": 6,
       "detection_range": 14,
       "position": [
-        0,
-        2
+        1,
+        14
       ],
       "status_effects": [],
       "cooldowns": {},
@@ -3928,39 +1836,6 @@
     },
     {
       "unit_id": 1,
-      "owner_id": 0,
-      "name": "Sharpshooter",
-      "faction": "rebel",
-      "rarity": 1,
-      "cost": 12,
-      "symbol": "RS",
-      "fullArt_path": null,
-      "icon_path": null,
-      "footprint": {
-        "width": 1,
-        "length": 1
-      },
-      "health": 10,
-      "current_health": 10,
-      "defense": 14,
-      "movement": 6,
-      "detection_range": 14,
-      "position": [
-        0,
-        2
-      ],
-      "status_effects": [],
-      "cooldowns": {},
-      "attacks": [
-        "sniper_rifle"
-      ],
-      "abilities": [
-        "steady_shot"
-      ],
-      "passive": []
-    },
-    {
-      "unit_id": 2,
       "owner_id": 0,
       "name": "Sharpshooter",
       "faction": "rebel",
@@ -3993,7 +1868,7 @@
       "passive": []
     },
     {
-      "unit_id": 3,
+      "unit_id": 2,
       "owner_id": 0,
       "name": "Rebel",
       "faction": "rebel",
@@ -4014,6 +1889,39 @@
       "position": [
         2,
         1
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "blaster"
+      ],
+      "abilities": [
+        "stealth"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 3,
+      "owner_id": 0,
+      "name": "Rebel",
+      "faction": "rebel",
+      "rarity": 1,
+      "cost": 6,
+      "symbol": "RT",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 20,
+      "current_health": 20,
+      "defense": 16,
+      "movement": 6,
+      "detection_range": 10,
+      "position": [
+        2,
+        2
       ],
       "status_effects": [],
       "cooldowns": {},
@@ -4045,74 +1953,8 @@
       "movement": 6,
       "detection_range": 10,
       "position": [
-        1,
-        1
-      ],
-      "status_effects": [],
-      "cooldowns": {},
-      "attacks": [
-        "blaster"
-      ],
-      "abilities": [
-        "stealth"
-      ],
-      "passive": []
-    },
-    {
-      "unit_id": 5,
-      "owner_id": 0,
-      "name": "Rebel",
-      "faction": "rebel",
-      "rarity": 1,
-      "cost": 6,
-      "symbol": "RT",
-      "fullArt_path": null,
-      "icon_path": null,
-      "footprint": {
-        "width": 1,
-        "length": 1
-      },
-      "health": 20,
-      "current_health": 20,
-      "defense": 16,
-      "movement": 6,
-      "detection_range": 10,
-      "position": [
-        2,
-        2
-      ],
-      "status_effects": [],
-      "cooldowns": {},
-      "attacks": [
-        "blaster"
-      ],
-      "abilities": [
-        "stealth"
-      ],
-      "passive": []
-    },
-    {
-      "unit_id": 6,
-      "owner_id": 0,
-      "name": "Rebel",
-      "faction": "rebel",
-      "rarity": 1,
-      "cost": 6,
-      "symbol": "RT",
-      "fullArt_path": null,
-      "icon_path": null,
-      "footprint": {
-        "width": 1,
-        "length": 1
-      },
-      "health": 20,
-      "current_health": 20,
-      "defense": 16,
-      "movement": 6,
-      "detection_range": 10,
-      "position": [
-        2,
-        17
+        0,
+        3
       ],
       "status_effects": [],
       "cooldowns": {},
@@ -4126,39 +1968,6 @@
     },
     {
       "unit_id": 1,
-      "owner_id": 0,
-      "name": "Sharpshooter",
-      "faction": "rebel",
-      "rarity": 1,
-      "cost": 12,
-      "symbol": "RS",
-      "fullArt_path": null,
-      "icon_path": null,
-      "footprint": {
-        "width": 1,
-        "length": 1
-      },
-      "health": 10,
-      "current_health": 10,
-      "defense": 14,
-      "movement": 6,
-      "detection_range": 14,
-      "position": [
-        0,
-        2
-      ],
-      "status_effects": [],
-      "cooldowns": {},
-      "attacks": [
-        "sniper_rifle"
-      ],
-      "abilities": [
-        "steady_shot"
-      ],
-      "passive": []
-    },
-    {
-      "unit_id": 2,
       "owner_id": 0,
       "name": "Sharpshooter",
       "faction": "rebel",
@@ -4191,7 +2000,7 @@
       "passive": []
     },
     {
-      "unit_id": 3,
+      "unit_id": 2,
       "owner_id": 0,
       "name": "Rebel",
       "faction": "rebel",
@@ -4224,40 +2033,7 @@
       "passive": []
     },
     {
-      "unit_id": 4,
-      "owner_id": 0,
-      "name": "Rebel",
-      "faction": "rebel",
-      "rarity": 1,
-      "cost": 6,
-      "symbol": "RT",
-      "fullArt_path": null,
-      "icon_path": null,
-      "footprint": {
-        "width": 1,
-        "length": 1
-      },
-      "health": 20,
-      "current_health": 20,
-      "defense": 16,
-      "movement": 6,
-      "detection_range": 10,
-      "position": [
-        1,
-        1
-      ],
-      "status_effects": [],
-      "cooldowns": {},
-      "attacks": [
-        "blaster"
-      ],
-      "abilities": [
-        "stealth"
-      ],
-      "passive": []
-    },
-    {
-      "unit_id": 5,
+      "unit_id": 3,
       "owner_id": 0,
       "name": "Rebel",
       "faction": "rebel",
@@ -4309,8 +2085,8 @@
       "movement": 6,
       "detection_range": 14,
       "position": [
-        0,
-        2
+        1,
+        14
       ],
       "status_effects": [],
       "cooldowns": {},
@@ -4323,7 +2099,7 @@
       "passive": []
     },
     {
-      "unit_id": 6,
+      "unit_id": 4,
       "owner_id": 0,
       "name": "Rebel",
       "faction": "rebel",
@@ -4342,8 +2118,8 @@
       "movement": 6,
       "detection_range": 10,
       "position": [
-        2,
-        17
+        0,
+        3
       ],
       "status_effects": [],
       "cooldowns": {},
@@ -4356,7 +2132,7 @@
       "passive": []
     },
     {
-      "unit_id": 7,
+      "unit_id": 5,
       "owner_id": 1,
       "name": "Brawler",
       "faction": "Imperial",
@@ -4375,8 +2151,8 @@
       "movement": 6,
       "detection_range": 12,
       "position": [
-        16,
-        21
+        8,
+        12
       ],
       "status_effects": [],
       "cooldowns": {},
@@ -4387,38 +2163,7 @@
       "passive": []
     },
     {
-      "unit_id": 8,
-      "owner_id": 1,
-      "name": "Brawler",
-      "faction": "Imperial",
-      "rarity": 1,
-      "cost": 5,
-      "symbol": "IB",
-      "fullArt_path": null,
-      "icon_path": null,
-      "footprint": {
-        "width": 2,
-        "length": 2
-      },
-      "health": 10,
-      "current_health": 10,
-      "defense": 18,
-      "movement": 6,
-      "detection_range": 12,
-      "position": [
-        15,
-        23
-      ],
-      "status_effects": [],
-      "cooldowns": {},
-      "attacks": [
-        "blaster"
-      ],
-      "abilities": [],
-      "passive": []
-    },
-    {
-      "unit_id": 9,
+      "unit_id": 6,
       "owner_id": 1,
       "name": "Sniper",
       "faction": "Imperial",
@@ -4437,40 +2182,7 @@
       "movement": 5,
       "detection_range": 12,
       "position": [
-        18,
-        18
-      ],
-      "status_effects": [],
-      "cooldowns": {},
-      "attacks": [
-        "sniper_rifle"
-      ],
-      "abilities": [
-        "steady_shot"
-      ],
-      "passive": []
-    },
-    {
-      "unit_id": 10,
-      "owner_id": 1,
-      "name": "Sniper",
-      "faction": "Imperial",
-      "rarity": 1,
-      "cost": 9,
-      "symbol": "IS",
-      "fullArt_path": null,
-      "icon_path": null,
-      "footprint": {
-        "width": 1,
-        "length": 1
-      },
-      "health": 10,
-      "current_health": 10,
-      "defense": 16,
-      "movement": 5,
-      "detection_range": 12,
-      "position": [
-        17,
+        8,
         8
       ],
       "status_effects": [],
@@ -4486,68 +2198,6 @@
     {
       "unit_id": 7,
       "owner_id": 1,
-      "name": "Brawler",
-      "faction": "Imperial",
-      "rarity": 1,
-      "cost": 5,
-      "symbol": "IB",
-      "fullArt_path": null,
-      "icon_path": null,
-      "footprint": {
-        "width": 2,
-        "length": 2
-      },
-      "health": 10,
-      "current_health": 10,
-      "defense": 18,
-      "movement": 6,
-      "detection_range": 12,
-      "position": [
-        16,
-        21
-      ],
-      "status_effects": [],
-      "cooldowns": {},
-      "attacks": [
-        "blaster"
-      ],
-      "abilities": [],
-      "passive": []
-    },
-    {
-      "unit_id": 8,
-      "owner_id": 1,
-      "name": "Brawler",
-      "faction": "Imperial",
-      "rarity": 1,
-      "cost": 5,
-      "symbol": "IB",
-      "fullArt_path": null,
-      "icon_path": null,
-      "footprint": {
-        "width": 2,
-        "length": 2
-      },
-      "health": 10,
-      "current_health": 10,
-      "defense": 18,
-      "movement": 6,
-      "detection_range": 12,
-      "position": [
-        15,
-        23
-      ],
-      "status_effects": [],
-      "cooldowns": {},
-      "attacks": [
-        "blaster"
-      ],
-      "abilities": [],
-      "passive": []
-    },
-    {
-      "unit_id": 9,
-      "owner_id": 1,
       "name": "Sniper",
       "faction": "Imperial",
       "rarity": 1,
@@ -4565,8 +2215,8 @@
       "movement": 5,
       "detection_range": 12,
       "position": [
-        18,
-        18
+        8,
+        1
       ],
       "status_effects": [],
       "cooldowns": {},
@@ -4579,7 +2229,38 @@
       "passive": []
     },
     {
-      "unit_id": 10,
+      "unit_id": 5,
+      "owner_id": 1,
+      "name": "Brawler",
+      "faction": "Imperial",
+      "rarity": 1,
+      "cost": 5,
+      "symbol": "IB",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 2,
+        "length": 2
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 18,
+      "movement": 6,
+      "detection_range": 12,
+      "position": [
+        8,
+        12
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "blaster"
+      ],
+      "abilities": [],
+      "passive": []
+    },
+    {
+      "unit_id": 6,
       "owner_id": 1,
       "name": "Sniper",
       "faction": "Imperial",
@@ -4598,8 +2279,41 @@
       "movement": 5,
       "detection_range": 12,
       "position": [
-        17,
+        8,
         8
+      ],
+      "status_effects": [],
+      "cooldowns": {},
+      "attacks": [
+        "sniper_rifle"
+      ],
+      "abilities": [
+        "steady_shot"
+      ],
+      "passive": []
+    },
+    {
+      "unit_id": 7,
+      "owner_id": 1,
+      "name": "Sniper",
+      "faction": "Imperial",
+      "rarity": 1,
+      "cost": 9,
+      "symbol": "IS",
+      "fullArt_path": null,
+      "icon_path": null,
+      "footprint": {
+        "width": 1,
+        "length": 1
+      },
+      "health": 10,
+      "current_health": 10,
+      "defense": 16,
+      "movement": 5,
+      "detection_range": 12,
+      "position": [
+        8,
+        1
       ],
       "status_effects": [],
       "cooldowns": {},

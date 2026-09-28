@@ -7,6 +7,7 @@ from server.api.game_api import GameAPI
 from src.classes.army import ArmyBuilder
 from src.classes.players import Player
 from src.classes.unit_instantiator import UnitInstantiator
+from src.game.turn_controller import TurnController
 from server.GameSession.GameState.mapManager import MapManager
 
 
@@ -29,6 +30,7 @@ class Game:
         self.factory = UnitInstantiator(unit_files or get_all_units())
         self.army_builder = ArmyBuilder(self.factory) #army: [(unit, position), (...)]
         self.map_manager = MapManager(rng=self.rng)
+        self.turn_controller = TurnController(self)
 
         self.players = []
         self._next_player_id = 0
@@ -95,14 +97,16 @@ class Game:
         while self.running:
             print("Game started. Running turn...")
             self.run_turn()
+            print("from core.start() -- breaking before running the next turn")
             break
             #orchestrate turn cycle here
 
 
     def run_turn(self):
         print(f"Turn {self.map_manager.turn_number}")
-        self.display()
-        self.map_manager.next_turn()
+        self.turn_controller.run()
+#        self.display()
+#        self.map_manager.next_turn()
 
 
     def stop(self):
@@ -113,4 +117,4 @@ class Game:
     # Utilities
     # ---------------------------
     def display(self):
-        self.map_manager.map.display(self.map_manager.build_map_symbol)
+        self.map_manager.map.display(self.map_manager.build_map_symbol, show_coordinates=True)

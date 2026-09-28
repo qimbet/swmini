@@ -3,6 +3,7 @@ import random, json, os
 from collections import deque
 
 from src.game.config import MAPS_DIR
+from src.game.grid_coordinates import position_to_cell
 from src.map.edges import *
 from src.map.tiles import *
 
@@ -372,18 +373,31 @@ class GameMap:
 
         self._build_obstacle_enclosures()
 
-    def display(self, symbol_provider=None):
-        print("+" + "---+" * self.width)
+
+
+
+    def display(self, symbol_provider=None, show_coordinates=True):
+        cell_width = 3
+        index_width = 4
+
+        if show_coordinates:
+            self._display_column_labels(cell_width, index_width)
+
+        prefix = " " * index_width if show_coordinates else ""
+        print(prefix + "+" + "---+" * self.width)
+
         for y in range(self.height):
-            row = "|"
+            row_label = f"{y + 1:>3} " if show_coordinates else ""
+
+            row = row_label + "|"
 
             for x in range(self.width):
                 if symbol_provider:
-                    symbol = symbol_provider(x,y)
+                    symbol = symbol_provider(x, y)
                 else:
                     symbol = self.tiles[y][x].symbol()
 
-                row += f"{symbol:<3}" #aw <3
+                row += f"{symbol:<3}" #aw :)
 
                 if x < self.width - 1:
                     edge = self.get_edge(
@@ -395,20 +409,41 @@ class GameMap:
                     row += "|"
 
             print(row)
-            border = "+"
+
+            # Horizontal border 
+            border_prefix = ( 
+                " " * index_width if show_coordinates 
+                else "" 
+            ) 
+
+            border = border_prefix + "+"
 
             for x in range(self.width):
-
                 if y < self.height - 1:
                     edge = self.get_edge(
                         (x, y),
                         (x, y + 1)
                     )
+
                     border += "---+" if edge else "   +"
                 else:
                     border += "---+"
 
             print(border)
+
+
+    def _display_column_labels(self, cell_width=3, index_width=4):
+        label = " " * index_width
+
+        for x in range(self.width):
+            cell_id = position_to_cell((x, 0))
+            label += f"{cell_id[0]:^{cell_width}} "
+
+        if x < self.width - 1: 
+            label += " "
+
+        print(label)
+
 
     def export(self, path):
         data = {
