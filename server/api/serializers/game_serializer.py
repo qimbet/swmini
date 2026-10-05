@@ -354,6 +354,56 @@ def serialize_units(units):
         for unit in units
     ]
 
+# ============================================================
+# Event serialization
+# ============================================================
+
+def serialize_events(events):
+    return [
+        dict(event)
+        for event in events
+    ]
+
+def serialize_action(action):
+    """
+    Convert an Action into the network representation
+    understood by the client/server protocol.
+    """
+
+    data = {
+        "type": action.__class__.__name__,
+        "action_class": action.action_class,
+        "unit_id": action.unit_id,
+    }
+
+    if hasattr(action, "destination"):
+        data["destination"] = _serialize_position(
+            action.destination
+        )
+
+    if hasattr(action, "target_id"):
+        data["target_id"] = action.target_id
+
+    return data
+
+def serialize_decision_wave(wave):
+    """
+    Serialize a DecisionWave for transmission between
+    client and server.
+
+    The serialized representation contains only stable IDs
+    and primitive JSON-safe values.
+    """
+
+    return {
+        "schema_version": GAME_STATE_SCHEMA_VERSION,
+        "player_id": wave.player.id,
+
+        "actions": [
+            serialize_action(action)
+            for action in wave.get_actions()
+        ],
+    }
 
 # ============================================================
 # Game serialization
@@ -420,6 +470,10 @@ def serialize_game(game):
         "units": serialize_units(
             map_manager.units
         ),
+
+        "events": serialize_events(
+            getattr(game, "events", [])
+        ),
     }
 
 
@@ -439,3 +493,26 @@ def serialize_game_json(game, **json_kwargs):
         serialize_game(game),
         **json_kwargs
     )
+
+def serialize_player_snapshot(game, player):
+    """
+    Return the game state visible to a player during
+    the decision phase.
+
+    DEBUG VERSION:
+    Currently exposes the complete game state.
+
+    Later this function should apply vision/fog-of-war rules.
+    """
+
+    state = serialize_game(game)
+
+    return {
+        "schema_version": state["schema_version"],
+        "turn_number": state["turn_number"],
+        "active_player_id": state["active_player_id"],
+
+        "map": state["map"],
+        "players": state["players"],
+        "units": state["units"],
+    }

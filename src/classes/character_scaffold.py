@@ -1,5 +1,5 @@
-from src.classes.attacks import *
-from src.classes.abilities import *
+from src.classes.actions.attack import *
+from src.classes.actions.abilities import *
 
 from dataclasses import dataclass
 
@@ -63,6 +63,8 @@ class Unit:
         self.status_efffects = []
         self.cooldowns = {} 
 
+    def has_ability(self, ability_name):
+        return ability_name in self.abilities
     
     def occupied_positions(self, position=None):
         """

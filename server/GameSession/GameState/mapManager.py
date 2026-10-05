@@ -140,10 +140,10 @@ class MapManager:
     def get_tile(self, position):
         x, y = position
         return self.map.tiles[y][x]
+
     # ---------------------------
     # Serialization
     # ---------------------------
-
     def save(self, path):
         state = {
             "seed": self.seed,
@@ -157,8 +157,8 @@ class MapManager:
         with open(path, "w") as f:
             json.dump(state, f, indent=2)
 
-    def load_state(self, path):
-        with open(path) as f:
-            state = json.load(f)
-        self.turn_number = state["turn"]
+#    def load_state(self, path):
+#        with open(path) as f:
+#            state = json.load(f)
+#        self.turn_number = state["turn"]
 

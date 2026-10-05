@@ -514,17 +514,13 @@ class GameMap:
             print(border)
 
     def _display_column_labels(self, cell_width=3, index_width=4):
-        label = " " * index_width
+        label = " " * (index_width + 1)
 
         for x in range(self.width):
             cell_id = position_to_cell((x, 0))
-            label += f"{cell_id[0]:^{cell_width +1 }} "
-
-        if x < self.width - 1: 
-            label += " "
+            label += f"{cell_id[0]:^{cell_width + 1}}"
 
         print(label)
-
 
     def export(self, path):
         data = {

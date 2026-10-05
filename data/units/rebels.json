@@ -47,7 +47,8 @@
         ],
 
         "abilities": [
-            "stealth"
+            "stealth", 
+            "mobile_attack"
         ],
 
         "rarity": 1

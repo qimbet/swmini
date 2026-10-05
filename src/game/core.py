@@ -31,6 +31,7 @@ class Game:
         self.army_builder = ArmyBuilder(self.factory) #army: [(unit, position), (...)]
         self.map_manager = MapManager(rng=self.rng)
         self.turn_controller = TurnController(self)
+        self.events = []
 
         self.players = []
         self._next_player_id = 0
@@ -104,9 +105,29 @@ class Game:
 
     def run_turn(self):
         print(f"Turn {self.map_manager.turn_number}")
-        self.turn_controller.run()
-#        self.display()
-#        self.map_manager.next_turn()
+        self.events = []
+
+        # Everyone decides against the same starting state.
+        self.display()
+
+        print("\n -- Decision Phase --")
+        waves = self.turn_controller.collect_decision_waves(
+            self.players
+        )
+
+        # Nobody gets to alter the authoritative state while
+        # decisions are being made.
+        self.turn_controller.resolve_waves(waves)
+
+        # Check whether the resolution ended the game.
+        winner = self.turn_controller.check_victory()
+
+        if winner:
+            print(f"Winner: {winner.name}")
+            self.stop()
+            return
+
+        self.map_manager.next_turn()
 
 
     def stop(self):
